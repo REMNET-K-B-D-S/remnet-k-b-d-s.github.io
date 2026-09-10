@@ -14,3 +14,21 @@ html[data-theme=dark]{color-scheme:dark;--bg:#0b1919;--surface:#102524;--ink:#e5
 .property-tag{display:inline-block;padding:2px 10px;border-radius:16px;background:#e9e1f5;color:#644b88;font-size:12px;overflow-wrap:anywhere;max-width:100%}
 html[data-theme=dark] .property-tag{background:#352c48;color:#dfc9ff}
 @media(max-width:650px){.post-properties{padding:16px 14px}.property-row{grid-template-columns:60px minmax(0,1fr);gap:8px;font-size:12px}}
+/* Shared Markdown callouts: light and dark palettes for supported alert types. */
+.prose .markdown-alert{--callout-bg:#e5edf8;--callout-ink:#315d87;--callout-line:#769fc6;margin:28px 0;padding:20px 24px;border:1px solid var(--callout-line);border-left:4px solid var(--callout-line);border-radius:10px;background:var(--callout-bg);color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.prose .markdown-alert-tip{--callout-bg:#e0eee5;--callout-ink:#28624d;--callout-line:#75a78c}
+.prose .markdown-alert-important{--callout-bg:#eae2f4;--callout-ink:#65498a;--callout-line:#a58bc4}
+.prose .markdown-alert-warning{--callout-bg:#f5edcd;--callout-ink:#796019;--callout-line:#baa24d}
+.prose .markdown-alert-caution{--callout-bg:#f4e3df;--callout-ink:#914d41;--callout-line:#c48b7d}
+.prose .markdown-alert>.markdown-alert-title{display:flex;align-items:center;gap:9px;margin:0 0 13px;color:var(--callout-ink);font-weight:700;font-size:15px;line-height:1.6}
+.prose .markdown-alert-title svg{display:block;flex:0 0 18px;width:18px;height:18px;fill:currentColor}
+.prose .markdown-alert>:last-child{margin-bottom:0}
+.prose .markdown-alert>p:not(.markdown-alert-title){margin-bottom:1em}
+.prose .markdown-alert>p:last-child{margin-bottom:0}
+html[data-theme=dark] .prose .markdown-alert{--callout-bg:#172b3b;--callout-ink:#acd0f3;--callout-line:#547c9e}
+html[data-theme=dark] .prose .markdown-alert-tip{--callout-bg:#183329;--callout-ink:#ace1c6;--callout-line:#5b9276}
+html[data-theme=dark] .prose .markdown-alert-important{--callout-bg:#30273e;--callout-ink:#dbc1f4;--callout-line:#8d72ad}
+html[data-theme=dark] .prose .markdown-alert-warning{--callout-bg:#352f1b;--callout-ink:#ebd78e;--callout-line:#9e8c49}
+html[data-theme=dark] .prose .markdown-alert-caution{--callout-bg:#3b2725;--callout-ink:#efb9ad;--callout-line:#a96f63}
+@media(max-width:650px){.prose .markdown-alert{padding:16px;margin:22px 0}.prose .markdown-alert>.markdown-alert-title{font-size:14px}}
+@media(forced-colors:active){.prose .markdown-alert{border-color:CanvasText}.prose .markdown-alert>.markdown-alert-title{color:CanvasText}}
