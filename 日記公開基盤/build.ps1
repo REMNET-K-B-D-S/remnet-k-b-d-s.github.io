@@ -122,7 +122,7 @@ function Page([string]$title,[string]$content,[string]$prefix) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="light dark"><title>$safeTitle | REMNET</title>
-<link rel="stylesheet" href="${prefix}assets/diary.css?v=properties-20260911"><script src="${prefix}assets/theme.js" defer></script></head>
+<link rel="stylesheet" href="${prefix}assets/diary.css?v=callouts-20260911"><script src="${prefix}assets/theme.js" defer></script></head>
 <body><a class="skip" href="#main">本文へ進む</a><header class="top"><div class="shell top-inner"><a class="wordmark" href="${prefix}../home.html">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">夜の色へ</span></button></div></header>
 <main id="main" class="shell">$content</main>
 <footer class="shell"><span class="mono">REMNET_K_B_D_S / NOTES &amp; LOG</span><a href="${prefix}index.html">日記一覧へ ↗</a></footer></body></html>
