@@ -5,7 +5,7 @@ Set-StrictMode -Version Latest
 if ($OutputName -notmatch '^(_site|preview_[a-zA-Z0-9_]+)$') { throw 'Invalid output name.' }
 $out=Join-Path $PSScriptRoot $OutputName
 if(Test-Path -LiteralPath $out) { throw "Output already exists: $out" }
-$files=@('index.html','Links/links_20260910.html','About/about.html','About/about.css','assets/about_ハートと点滴くま.png','assets/lab_草に還る実験室.png','assets/mail_新芽のキーボードと緑のディスク.png','SPIRIT表紙_試作05/opening.html','SPIRIT表紙_試作05/style.css','SPIRIT表紙_試作05/animation.js','SPIRIT表紙_試作05/gsap.min.js','SPIRIT表紙_試作05/scene.png','SPIRIT表紙_試作05/clean-plate.png','日記公開基盤/assets/theme.js')
+$files=@('index.html','home.html','Links/links_20260910.html','About/about.html','About/about.css','assets/about_ハートと点滴くま.png','assets/lab_草に還る実験室.png','assets/mail_新芽のキーボードと緑のディスク.png','SPIRIT表紙_試作05/opening.html','SPIRIT表紙_試作05/style.css','SPIRIT表紙_試作05/animation.js','SPIRIT表紙_試作05/gsap.min.js','SPIRIT表紙_試作05/scene.png','SPIRIT表紙_試作05/clean-plate.png','日記公開基盤/assets/theme.js')
 foreach($file in $files) { if(-not(Test-Path -LiteralPath (Join-Path $PSScriptRoot $file) -PathType Leaf)) { throw "Missing: $file" } }
 $diaryOutput='preview_'+[guid]::NewGuid().ToString('N')
 & (Join-Path $PSScriptRoot '日記公開基盤/build.ps1') -OutputName $diaryOutput
