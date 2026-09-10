@@ -121,12 +121,22 @@ html .directory .entry :is(strong,p,.state){font-weight:600}
 html .directory .entry :is(.number,.arrow){font-weight:400}
 html .directory .entry .text-highlight{color:inherit;font-weight:inherit}
 html[data-theme=dark] .directory .entry{--text-backing:rgba(42,47,45,.8)}
+/* HOME entrance navigation */
+.top-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-shrink:0;margin-left:auto}
+.cover-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:30px;background:var(--surface);color:var(--ink);font-size:14px;text-decoration:none;white-space:nowrap}
+.cover-link:hover{border-color:var(--purple)}
+@media(max-width:480px){.top-inner{flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}.top-actions{gap:8px}.cover-link{padding:9px 10px;font-size:12px}}
 </style>
-<noscript><style>.theme{display:none}</style></noscript>
+<noscript><style>.theme{display:none}/* HOME entrance navigation */
+.top-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-shrink:0;margin-left:auto}
+.cover-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:30px;background:var(--surface);color:var(--ink);font-size:14px;text-decoration:none;white-space:nowrap}
+.cover-link:hover{border-color:var(--purple)}
+@media(max-width:480px){.top-inner{flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}.top-actions{gap:8px}.cover-link{padding:9px 10px;font-size:12px}}
+</style></noscript>
 </head>
 <body>
 <a class="skip" href="#directory">案内へ進む</a>
-<header class="top"><div class="shell top-inner"><a class="wordmark" href="#home" aria-label="REMNET トップ">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">夜の色へ</span></button></div></header>
+<header class="top"><div class="shell top-inner"><a class="wordmark" href="#home" aria-label="REMNET トップ">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><div class="top-actions"><a class="cover-link" href="index.html">表紙に戻る</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">夜の色へ</span></button></div></div></header>
 <main class="shell" id="home">
 <section class="hero" aria-labelledby="hero-title"><div class="eyebrow mono">PERSONAL SPACE / 001</div><div class="hero-grid"><h1 id="hero-title">線の先に、<br><em>置いておく。</em></h1><p class="intro">つくること。書きとめること。<br>まだ途中のものにも、居場所を。<br>ここは、REMNETの小さな入口。</p></div><div class="signature" aria-hidden="true"><span class="signature-text">REMNET<span class="under">_</span>K<span class="under">_</span>B<span class="under">_</span>D<span class="under">_</span>S</span><small>REMNET<br>PERSONAL INDEX</small></div></section>
 <div class="index-head" id="directory"><h2>どこから、ひらこう。</h2><span class="mono">INDEX / 01—07　↓</span></div>
