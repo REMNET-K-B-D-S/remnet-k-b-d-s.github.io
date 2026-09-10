@@ -4,3 +4,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#0b1919;--surface:#102524;--ink:#e5
 @media(max-width:760px){.shell{width:calc(100% - 36px)}.hero{padding-top:35px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:46px}.lettermark{text-align:left;font-size:92px;line-height:.9;margin-top:10px}.hero p{font-size:13px}.part{grid-template-columns:1fr;gap:30px;padding-top:30px}.part-note{display:grid;grid-template-columns:65px 1fr;gap:5px 15px}.part-note .part-no{grid-row:span 3;margin:6px 0 0}.part-note h2{margin:0}.part-note p{grid-column:2}.part-note .tag{grid-column:2;justify-self:start;margin-top:8px}.pm-prose{font-size:15px}.pm-prose h2{font-size:24px}.rem-part{padding:24px 20px}.rem-reading{padding:20px;font-size:15px}.rem-top h2{font-size:30px}.pencil{font-size:60px}.end-note{align-items:start;flex-direction:column;gap:8px}.top-inner{min-height:64px}}
 @media(max-width:430px){.wordmark{font-size:12px}.theme{padding:9px 12px;gap:7px;font-size:11px}.hero h1{font-size:40px}.byline{font-size:10px;gap:10px}.reader-nav{gap:16px;font-size:11px}.rem-top h2{font-size:27px}.rem-part{padding:22px 16px}.editor textarea{padding:16px}.tools{display:grid;grid-template-columns:1fr 1fr}.tools button.primary{grid-column:1/-1}.pm-end{padding:20px}footer{font-size:9px}.rem-reading{padding:18px}.help,.status{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* ABOUT manuscript v1: REM, AM, PM. Keep the existing responsive layout. */
+:root{--accent:#645089;--active:#645089;--soft:#e3dcf3;--yellow:#eee9f4}
+html[data-theme=dark]{--accent:#c8b5eb;--active:#c8b5eb;--soft:#29233b;--yellow:#29233b}
+.reader-nav{flex-wrap:wrap;border-top:1px solid var(--line);gap:16px 32px}
+.reader-nav a{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;font-size:11px;overflow-wrap:anywhere}
+.reader-nav a span{font-size:14px}
+.part-note .author-label{margin-bottom:10px;color:var(--accent);font-size:11px;letter-spacing:.035em}
+.author-prose{min-width:0;overflow-wrap:anywhere;font-size:15px;line-height:2.15}
+.author-prose p{margin:0 0 22px}
+.author-prose h3{font-size:25px;line-height:1.6;font-weight:500;letter-spacing:-.025em;margin:48px 0 22px}
+.author-prose h3:first-child{margin-top:0}
+.author-prose p:last-child{margin-bottom:0}
+#rem{border-top:3px solid var(--accent)}
+.page-note{padding:28px 32px;margin-bottom:45px;background:var(--soft);border-left:3px solid var(--accent)}
+.page-note h2{font-size:22px;font-weight:500;margin:0 0 20px}
+footer{flex-wrap:wrap}
+@media(max-width:760px){.part-note .author-label{grid-column:2;grid-row:1;margin:0}.author-part .part-note h2{grid-column:2;grid-row:2}.author-prose h3{font-size:24px}.page-note{padding:24px 20px}}
