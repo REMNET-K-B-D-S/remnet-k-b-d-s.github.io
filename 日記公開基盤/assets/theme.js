@@ -6,7 +6,7 @@
   document.documentElement.dataset.theme = dark ? 'dark' : 'light';
   button.setAttribute('aria-pressed', String(dark));
   button.setAttribute('aria-label', dark ? 'ライトモードに切り替え' : 'ダークモードに切り替え');
-  label.textContent = dark ? '昼の色へ' : '夜の色へ';
+  label.textContent = dark ? 'ライトモードへ' : 'ダークモードへ';
  }
  try { apply(sessionStorage.getItem('remnet-diary-theme') === 'dark'); } catch { apply(false); }
  button.addEventListener('click', () => {
