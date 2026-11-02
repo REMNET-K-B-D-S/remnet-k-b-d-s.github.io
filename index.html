@@ -26,13 +26,12 @@ html[data-theme=dark]{color-scheme:dark;--bg:#17131d;--ink:#f2ecf8;--purple:#d3b
 <li><a class="item" href="#works"><span class="num">04</span><span><span class="name">WORKS</span><span class="description">作品庫。</span></span><span class="arrow" aria-hidden="true">↓</span></a></li>
 <li><a class="item" href="#shop"><span class="num">05</span><span><span class="name">SHOP <span class="status">準備中</span></span></span><span class="arrow" aria-hidden="true">↓</span></a></li>
 <li><a class="item" href="Links/links_20260910.html" data-theme-link><span class="num">06</span><span><span class="name">LINK</span><span class="description">REMNETのリンク。</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
-<li><a class="item" href="#mail"><span class="num">07</span><span><span class="name">MAIL・Discord <span class="status">準備中</span></span><span class="description">ご依頼・連絡・仕事。</span></span><span class="arrow" aria-hidden="true">↓</span></a></li>
+<li><a class="item" href="contact.html" data-theme-link><span class="num">07</span><span><span class="name">MAIL・Discord</span><span class="description">ご依頼・連絡・仕事。</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
 </ol></nav>
 <div class="info">
 <details id="lab"><summary>LAB / PROJECT の案内</summary><p>実験・プロジェクトの入口。<a href="https://remnet-k-b-d-s.github.io/not-ai-looking-design-lab/">文字と色のデザイン実験を見る →</a></p></details>
 <details id="works"><summary>WORKS の案内</summary><p>作品庫は準備中です。</p></details>
 <details id="shop"><summary>SHOP の案内</summary><p>準備中です。</p></details>
-<details id="mail"><summary>MAIL・Discord の案内</summary><p>連絡先の案内は準備中です。</p></details>
 </div></main>
 <footer><span>REMNET-K-B-D-S</span><a href="#">ページの先頭へ ↑</a></footer>
 </div>
@@ -54,3 +53,4 @@ buttons.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.mode)));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(a.getAttribute('href').slice(1));if(target&&target.tagName==='DETAILS')target.open=true;}));
 </script>
 </body></html>
+
