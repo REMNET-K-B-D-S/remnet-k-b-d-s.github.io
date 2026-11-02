@@ -16,6 +16,7 @@ html[data-theme=dark]{color-scheme:dark;--bg:#17131d;--ink:#f2ecf8;--purple:#d3b
 :root{--grid:rgba(82,50,118,.065)}
 html[data-theme=dark]{--grid:rgba(211,181,242,.055)}
 body{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+.site-credit{min-width:0}.copyright{color:var(--purple)}.since{display:inline-block;margin-top:4px;font-size:10px;line-height:1.8;color:var(--muted)}@media(max-width:600px){footer{flex-wrap:wrap}.site-credit{max-width:100%}}
 </style>
 </head>
 <body>
@@ -37,7 +38,7 @@ body{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gr
 <details id="works"><summary>WORKS の案内</summary><p>作品庫は準備中です。</p></details>
 <details id="shop"><summary>SHOP の案内</summary><p>準備中です。</p></details>
 </div></main>
-<footer><span>REMNET-K-B-D-S</span><a href="#">ページの先頭へ ↑</a></footer>
+<footer><span class="site-credit"><span class="copyright">© 2026 REMNET-K-B-D-S</span><br><span class="since"><time datetime="2026-09-10">2026年9月10日 開設 / <span lang="en">Since September 10, 2026</span></time></span></span><a href="#">ページの先頭へ ↑</a></footer>
 </div>
 <script>
 const root=document.documentElement;
@@ -57,4 +58,5 @@ buttons.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.mode)));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(a.getAttribute('href').slice(1));if(target&&target.tagName==='DETAILS')target.open=true;}));
 </script>
 </body></html>
+
 
