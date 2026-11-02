@@ -26,7 +26,7 @@ body{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gr
 <nav aria-label="メインメニュー" id="menu"><ol class="menu">
 <li><a class="item" href="About/about.html" data-theme-link><span class="num">01</span><span><span class="name">ABOUT</span><span class="description">この場所について。REMNETと、この場所のこと。</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
 <li><a class="item" href="#lab"><span class="num">02</span><span><span class="name">LAB / PROJECT</span><span class="description">実験・プロジェクト。</span></span><span class="arrow" aria-hidden="true">↓</span></a></li>
-<li><a class="item" href="notes.html" data-theme-link><span class="num">03</span><span><span class="name">NOTES / LOG</span><span class="description">記録・日記。日々の言葉や、制作の記録。</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+<li><a class="item" href="notes.html" data-theme-link><span class="num">03</span><span><span class="name">NOTES / LOG</span><span class="description">日記・制作の記録・研究倫理に関する記録。<br><span lang="en">Diary, Creative Logs &amp; Records on Research Ethics</span></span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
 <li><a class="item" href="#works"><span class="num">04</span><span><span class="name">WORKS</span><span class="description">作品庫。</span></span><span class="arrow" aria-hidden="true">↓</span></a></li>
 <li><a class="item" href="#shop"><span class="num">05</span><span><span class="name">SHOP <span class="status">準備中</span></span></span><span class="arrow" aria-hidden="true">↓</span></a></li>
 <li><a class="item" href="Links/links_20260910.html" data-theme-link><span class="num">06</span><span><span class="name">LINK</span><span class="description">REMNETのリンク。</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
@@ -57,3 +57,4 @@ buttons.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.mode)));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(a.getAttribute('href').slice(1));if(target&&target.tagName==='DETAILS')target.open=true;}));
 </script>
 </body></html>
+
