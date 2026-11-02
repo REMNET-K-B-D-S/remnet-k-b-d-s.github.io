@@ -89,7 +89,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:var(--p
 </head>
 <body>
 <a class="skip" href="#links">リンク一覧へ進む</a>
-<header class="top"><div class="shell top-inner"><a class="wordmark" href="../home.html" data-theme-link aria-label="REMNET ホームへ">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">夜の色へ</span></button></div></header>
+<header class="top"><div class="shell top-inner"><a class="wordmark" href="../home.html" data-theme-link aria-label="REMNET ホームへ">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">ダークモードへ</span></button></div></header>
 <main class="shell link-main" id="home">
 <a class="back-link" href="../home.html" data-theme-link>← ホームへ</a>
 <div class="link-heading">
@@ -124,7 +124,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:var(--p
     root.dataset.theme = dark ? 'dark' : 'light';
     button.setAttribute('aria-pressed', String(dark));
     button.setAttribute('aria-label', dark ? 'ライトモードに切り替え' : 'ダークモードに切り替え');
-    label.textContent = dark ? '昼の色へ' : '夜の色へ';
+    label.textContent = dark ? 'ライトモードへ' : 'ダークモードへ';
     for (const link of localLinks) {
       const href = link.dataset.baseHref;
       const hashAt = href.indexOf('#');
@@ -151,3 +151,4 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:var(--p
 </script>
 </body>
 </html>
+
