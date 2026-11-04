@@ -14,17 +14,33 @@ html[data-theme=dark]{color-scheme:dark;--bg:#11191b;--surface:#1e202b;--ink:#e9
 @media(max-width:650px){.shell{width:calc(100% - 36px)}.top-inner{flex-wrap:wrap;gap:8px;padding:14px 0}.wordmark{font-size:13px}.modes button{font-size:12px;padding:8px 10px}.heading{display:block;padding:24px 0 28px}.heading p{margin-top:20px}.contact{grid-template-columns:25px minmax(0,1fr);gap:12px;padding:24px 18px}h2{font-size:29px}.address{font-size:16px}.notice{padding:24px 20px;margin:30px 0}.rules p{font-size:14px}.rules .en{font-size:13px}.footer{font-size:11px;flex-wrap:wrap}}
 .copy-row{display:flex;align-items:center;flex-wrap:wrap;gap:12px}.copy-button{min-height:44px;padding:7px 16px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--purple);font:inherit;font-size:13px;cursor:pointer}.copy-button:hover{border-color:var(--purple)}.copy-status{display:block;min-height:1.85em;font-size:12px;color:var(--muted)}
 </style>
-</head>
+<style id="remnet-local-theme">/* REMNET local shared presentation */
+:root{--accent:#bd4028;--red:#bd4028;--ready:#17683a;--ready-bg:#e3f2e8}
+html[data-theme=dark]{--accent:#ff8b68;--red:#ff8b68;--ready:#91ff6a;--ready-bg:#203425}
+.preparing{color:var(--ready);font-weight:650}
+.status,.badge.preparing{color:var(--ready);background:var(--ready-bg)}
+html[data-theme=dark] .preparing{text-shadow:0 0 10px rgb(145 255 106 / .18)}
+.arrow,.notes-accordion .accordion-arrow{font-size:32px;line-height:1.25;color:var(--accent);display:inline-block;min-width:30px;text-align:center}
+.item{grid-template-columns:38px minmax(0,1fr) 36px}
+summary:not(.item)::marker{font-size:1.4em;color:var(--accent)}
+summary:focus-visible,a:focus-visible,button:focus-visible{outline-color:var(--accent)}
+.index-label,.eyebrow{border-left:3px solid var(--accent);padding-left:10px}
+.tools a:hover,.local-links a:hover,.breadcrumb a:hover{color:var(--accent)}
+.tools a:hover{border-color:var(--accent)}
+.content-panel h3,.shelf>h2{border-left:3px solid var(--accent);padding-left:10px}
+.local-note,.proof-bar{border-left:3px solid var(--accent)}
+.menu details[open]>summary{border-left-color:var(--accent)}
+.local-links{display:flex;flex-wrap:wrap;gap:8px 16px}
+.local-links a{min-height:36px;display:inline-flex;align-items:center;margin:0}
+.notice{border-top-color:var(--accent);margin-top:20px;margin-bottom:32px}
+.contacts{margin-bottom:36px}
+@media(max-width:600px){.item{grid-template-columns:28px minmax(0,1fr) 32px}.arrow,.notes-accordion .accordion-arrow{font-size:30px}}</style></head>
 <body>
 <a class="skip" href="#contact">連絡先へ進む</a>
 <header class="top"><div class="shell top-inner"><a class="wordmark" data-home href="index.html">REMNET-K-B-D-S</a><div class="modes" role="group" aria-label="表示モード"><button type="button" data-mode="light" aria-pressed="true">ライトモード</button><button type="button" data-mode="dark" aria-pressed="false">ダークモード</button></div></div></header>
 <main class="shell" id="contact">
 <a class="back" data-home href="index.html">← ホームへ / Home</a>
-<div class="heading"><div><p class="eyebrow">REMNET-K-B-D-S / 07</p><h1>CONTACT<span>_</span></h1></div><p>ご依頼・お問い合わせ・ご連絡<span lang="en">Requests, inquiries &amp; contact</span></p></div>
-<ul class="contacts" aria-label="連絡先 / Contact details">
-<li class="contact"><span class="number" aria-hidden="true">01 /</span><div><h2>Gmail</h2><a class="address" href="mailto:remnet.k.b.d.s@gmail.com">remnet.k.b.d.s@gmail.com</a><p class="hint">メールアプリを開きます。<span lang="en">Opens your email app.</span></p></div></li>
-<li class="contact"><span class="number" aria-hidden="true">02 /</span><div><h2>Discord</h2><div class="copy-row"><span class="address" id="discord-id">remnet_k_b_d_s</span><button type="button" class="copy-button" id="copy-discord" aria-label="DiscordのIDをコピー / Copy Discord username">コピー / Copy</button></div><span class="copy-status" id="copy-status" role="status" aria-live="polite"></span><p class="hint">Discordのユーザー名です。<span lang="en">Discord username.</span></p></div></li>
-</ul>
+<div class="heading"><div><p class="eyebrow">REMNET-K-B-D-S / 08</p><h1>CONTACT<span>_</span></h1></div><p>ご依頼・お問い合わせ・ご連絡<span lang="en">Requests, inquiries &amp; contact</span></p></div>
 <section class="notice" aria-labelledby="notice-title"><h2 id="notice-title">連絡の前に<span lang="en">Before you get in touch</span></h2>
 <ol class="rules">
 <li><p>ご連絡は、ご依頼・お問い合わせなど、ご用件のある方のみお願いします。</p><p class="en" lang="en">Please contact me only if you have a specific request or inquiry.</p></li>
@@ -32,18 +48,34 @@ html[data-theme=dark]{color-scheme:dark;--bg:#11191b;--surface:#1e202b;--ink:#e9
 <li><p>すぐに返信できないことがあります。また、すべてのご連絡に返信するとは限りません。</p><p class="en" lang="en">Replies may take time, and I may not respond to every message.</p></li>
 <li><p>私の判断で、予告なく連絡をお断りしたり、ブロックしたりする場合があります。</p><p class="en" lang="en">I reserve the right to decline further contact or block anyone at my discretion, without notice.</p></li>
 </ol></section>
+<ul class="contacts" aria-label="連絡先 / Contact details">
+<li class="contact"><span class="number" aria-hidden="true">01 /</span><div><h2>Gmail</h2><a class="address" href="mailto:remnet.k.b.d.s@gmail.com">remnet.k.b.d.s@gmail.com</a><p class="hint">メールアプリを開きます。<span lang="en">Opens your email app.</span></p></div></li>
+<li class="contact"><span class="number" aria-hidden="true">02 /</span><div><h2>Discord</h2><div class="copy-row"><span class="address" id="discord-id">remnet_k_b_d_s</span><button type="button" class="copy-button" id="copy-discord" aria-label="DiscordのIDをコピー / Copy Discord username">コピー / Copy</button></div><span class="copy-status" id="copy-status" role="status" aria-live="polite"></span><p class="hint">Discordのユーザー名です。<span lang="en">Discord username.</span></p></div></li>
+</ul>
+
 <footer class="footer"><span>REMNET-K-B-D-S / CONTACT</span><a data-home href="index.html">ホームへ戻る / Back to home ↑</a></footer>
 </main>
-<script>
-const root=document.documentElement;
-const buttons=document.querySelectorAll('[data-mode]');
-const homeLinks=document.querySelectorAll('[data-home]');
-homeLinks.forEach(a=>a.dataset.baseHref=a.getAttribute('href'));
-function applyTheme(mode){root.dataset.theme=mode;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));homeLinks.forEach(a=>a.setAttribute('href',a.dataset.baseHref+'?theme='+mode));try{sessionStorage.setItem('remnet-top-theme',mode);}catch{}}
-let initial=new URLSearchParams(location.search).get('theme');
-if(initial!=='light'&&initial!=='dark'){try{initial=sessionStorage.getItem('remnet-top-theme');}catch{}}
-applyTheme(initial==='light'||initial==='dark'?initial:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
-buttons.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.mode)));
+<script>(() => {
+ const root=document.documentElement;
+ const buttons=[...document.querySelectorAll('[data-mode]')];
+ const links=[...document.querySelectorAll('a[href]')].filter(a=>{
+  const raw=a.getAttribute('href');
+  return raw && !raw.startsWith('#') && !/^[a-z][a-z0-9+.-]*:/i.test(raw) && !raw.startsWith('//') && /\.html?(?:[?#]|$)/i.test(raw);
+ });
+ links.forEach(a=>a.dataset.baseHref=a.getAttribute('href'));
+ function applyTheme(value){
+  const mode=value==='dark'?'dark':'light';
+  root.dataset.theme=mode;
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  links.forEach(a=>{try{const url=new URL(a.dataset.baseHref,location.href);url.searchParams.set('theme',mode);a.setAttribute('href',url.href);}catch{}});
+  try{sessionStorage.setItem('remnet-top-theme',mode);sessionStorage.setItem('remnet-diary-theme',mode);}catch{}
+ }
+ let initial=new URLSearchParams(location.search).get('theme');
+ if(initial!=='dark'&&initial!=='light'){try{initial=sessionStorage.getItem('remnet-top-theme');}catch{}}
+ if(initial!=='dark'&&initial!=='light'){initial=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+ applyTheme(initial);
+ buttons.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.mode)));
+})();
 const copyButton=document.getElementById('copy-discord');
 const copyStatus=document.getElementById('copy-status');
 copyButton.addEventListener('click',async()=>{

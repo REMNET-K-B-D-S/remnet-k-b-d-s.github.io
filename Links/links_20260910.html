@@ -1,154 +1,130 @@
-<!doctype html>
-<html lang="ja" data-theme="light">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<title>リンク — REMNET_K_B_D_S</title>
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'">
-<meta name="description" content="REMNET_K_B_D_Sの小さな入口。X・GitHub・note・Substackへのリンクと、制作途中の個人HP。">
-<style>
+<!doctype html><html lang="ja" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="referrer" content="no-referrer"><title>LINK | REMNET-K-B-D-S</title><style>
+:root{color-scheme:light;--bg:#faf8fc;--ink:#231b2e;--purple:#523276;--muted:#65596e;--line:#d9cfe3;--soft:#eee6f6;--green:#245543;--mint:#e4f0e8;--red:#ac303e}
+html[data-theme=dark]{color-scheme:dark;--bg:#17131d;--ink:#f2ecf8;--purple:#d3b5f2;--muted:#bcb0c9;--line:#483b56;--soft:#2d223c;--green:#b2dcc3;--mint:#20362c;--red:#ff939e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Yu Gothic UI","Hiragino Sans",Meiryo,sans-serif;line-height:1.8}a{color:inherit;text-underline-offset:5px}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:5px}.page{max-width:940px;margin:auto;padding:56px 44px 28px}header{display:flex;justify-content:space-between;align-items:start;gap:24px;padding-bottom:30px;border-bottom:2px solid var(--purple)}h1{font-size:clamp(19px,3.5vw,28px);letter-spacing:.025em;line-height:1.5;margin:0;color:var(--purple);font-weight:650}.controls{text-align:right}.modes{display:flex;gap:5px;justify-content:flex-end}button{border:1px solid transparent;border-radius:5px;background:transparent;color:var(--muted);padding:7px 11px;cursor:pointer;font-size:13px;min-height:44px}button[aria-pressed=true]{background:var(--soft);color:var(--purple);border-color:var(--line)}.languages{font-size:12px;color:var(--muted);margin:12px 0 0}.languages strong{color:var(--green);font-weight:600}.languages small{display:block;font-size:11px}.index-label{font-size:11px;letter-spacing:.16em;color:var(--muted);margin:30px 0 10px}.menu{list-style:none;margin:0;padding:0}.menu li{border-bottom:1px solid var(--line)}.item{display:grid;grid-template-columns:38px 1fr 24px;column-gap:16px;padding:24px 12px 24px 0;text-decoration:none;border-left:3px solid transparent;transition:background .15s,border-color .15s}.item:hover,.item:focus-visible{background:var(--soft);border-left-color:var(--red)}.num{font:13px/2 Consolas,monospace;color:var(--green);padding-left:9px}.name{display:block;font-size:clamp(20px,3vw,27px);font-weight:500;letter-spacing:.035em;line-height:1.3;color:var(--purple)}.description{display:block;font-size:14px;color:var(--muted);margin-top:8px}.arrow{color:var(--green);font-size:20px}.status{display:inline-block;font-size:11px;color:var(--green);background:var(--mint);border-radius:3px;padding:1px 7px;margin-left:12px;vertical-align:middle;letter-spacing:0}.info{margin-top:30px;color:var(--muted);font-size:13px}.info details{border-bottom:1px solid var(--line)}summary{cursor:pointer;padding:13px 0;color:var(--green)}.info p{margin:0;padding:0 0 15px}footer{margin-top:44px;padding-top:16px;font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:16px}footer a{text-decoration:none}.skip{position:absolute;left:12px;top:-100px}.skip:focus{top:8px;background:var(--bg);padding:8px}
+@media(max-width:600px){.page{padding:30px 22px 24px}header{display:block;padding-bottom:24px}.controls{text-align:left;margin-top:20px}.modes{justify-content:flex-start}.languages small{display:inline;margin-left:8px}.item{grid-template-columns:28px 1fr 18px;column-gap:9px;padding-top:22px;padding-bottom:22px}.num{padding-left:3px}.description{font-size:13px}.name{font-size:22px}.status{margin-left:7px;font-size:10px}footer{margin-top:32px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* 方眼のTOP見文：文字・配色・並びは採用済みTOPを継承 */
+:root{--grid:rgba(82,50,118,.065)}
+html[data-theme=dark]{--grid:rgba(211,181,242,.055)}
+body{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+.site-credit{min-width:0}.copyright{color:var(--purple)}.since{display:inline-block;margin-top:4px;font-size:10px;line-height:1.8;color:var(--muted)}@media(max-width:600px){footer{flex-wrap:wrap}.site-credit{max-width:100%}}
 
-:root{color-scheme:light;--bg:#e9eeeb;--surface:#f5f6ef;--ink:#173d3a;--muted:#536a65;--line:#a6b9af;--accent:#b43e2b;--soft:#dee9df;--yellow:#efe89a;--active:#176c60;--grid:rgba(34,80,67,.055)}
-html[data-theme=dark]{color-scheme:dark;--bg:#0b1919;--surface:#102524;--ink:#e5efdd;--muted:#a2b6ad;--line:#3c5a51;--accent:#ff9a78;--soft:#193a33;--yellow:#37442b;--active:#9bdec2;--grid:rgba(146,204,177,.04)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.7;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}a{color:inherit}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.shell{width:min(1120px,calc(100% - 64px));margin:auto}.mono{font-family:Consolas,"SFMono-Regular",monospace;font-size:11px;letter-spacing:.09em}.top{position:sticky;top:0;z-index:3;background:var(--bg);border-bottom:1px solid var(--line)}.top-inner{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:12px}.wordmark{font:700 15px/1.2 Consolas,monospace;letter-spacing:-.04em;text-decoration:none}.wordmark span{color:var(--accent)}.theme{border:1px solid var(--line);border-radius:30px;padding:10px 16px;min-height:44px;background:var(--surface);color:var(--ink);cursor:pointer;display:flex;gap:10px;align-items:center;font-size:12px}.theme .disc{width:14px;height:14px;border:1px solid currentColor;border-radius:50%;background:linear-gradient(90deg,currentColor 50%,transparent 50%)}.theme:hover{border-color:var(--accent)}.hero{padding:64px 0 44px;position:relative}.eyebrow{display:flex;gap:12px;align-items:center;color:var(--muted)}.eyebrow:before{content:"";width:7px;height:7px;background:var(--accent);border-radius:50%}.hero-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:36px;align-items:end;margin-top:30px}.hero h1{font-size:clamp(42px,6.5vw,78px);line-height:1.25;letter-spacing:-.065em;font-weight:500;margin:0}.hero h1 em{font-style:normal;color:var(--active)}.intro{font-size:14px;max-width:28em;margin:0 0 9px;line-height:2.1;color:var(--muted)}.signature{position:relative;display:flex;align-items:baseline;justify-content:space-between;font-family:Consolas,"SFMono-Regular",monospace;font-size:clamp(55px,12.8vw,154px);line-height:1.1;font-weight:700;letter-spacing:-.09em;margin-top:42px;border-bottom:1px solid var(--line);padding-bottom:28px;user-select:none}.signature .under{color:var(--accent);font-weight:400}.signature small{font-size:11px;letter-spacing:.03em;writing-mode:vertical-rl;line-height:1.4;color:var(--muted)}.index-head{display:flex;justify-content:space-between;align-items:center;padding:15px 0 21px;gap:15px}.index-head h2{font-size:13px;font-weight:500;margin:0}.index-head span{color:var(--muted)}.directory{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}.entry{grid-column:span 3;position:relative;min-height:226px;padding:24px 28px;background:var(--surface);border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-decoration:none;display:flex;flex-direction:column;transition:background .18s}.entry:nth-child(n+3):nth-child(-n+5){grid-column:span 2}.entry:before{content:"";position:absolute;top:-1px;left:0;width:0;height:3px;background:var(--accent);transition:width .22s}.entry:hover,.entry:focus-visible{background:var(--soft)}.entry:hover:before,.entry:focus-visible:before{width:100%}.entry:active{background:var(--yellow)}.entry-top{display:flex;align-items:center;justify-content:space-between}.number{color:var(--accent);font:12px Consolas,monospace}.arrow{color:var(--muted);font-size:18px}.entry h3{font-family:Consolas,"SFMono-Regular",monospace;font-size:clamp(23px,3.5vw,38px);font-weight:400;letter-spacing:-.07em;line-height:1.15;margin:23px 0 11px}.entry strong{font-size:13px;font-weight:600}.entry p{font-size:12px;color:var(--muted);margin:7px 0 20px;line-height:1.85}.entry .state{font-size:10px;color:var(--muted);margin-top:auto;display:flex;align-items:center;gap:8px}.state:before{content:"";width:15px;height:1px;background:var(--line)}.below{display:grid;grid-template-columns:1fr 2fr;gap:48px;padding:58px 0}.below-label{font-size:12px;color:var(--muted)}.below-label b{display:block;font-family:Consolas,monospace;font-size:27px;font-weight:400;letter-spacing:-.06em;color:var(--ink);margin-bottom:12px}.details{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);scroll-margin-top:95px}summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;padding:19px 0;font-size:13px}summary::-webkit-details-marker{display:none}summary:after{content:"＋";margin-left:auto;color:var(--accent)}details[open] summary:after{content:"−"}summary .mono{color:var(--accent)}.detail-body{padding:0 30px 22px;font-size:13px;color:var(--muted);line-height:2}.detail-body p{margin:0}.detail-body a{display:inline-block;margin-top:12px;text-underline-offset:4px}.end-note{padding:27px 30px;background:var(--yellow);display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:48px}.end-note p{margin:0;font-size:14px}.end-note span{color:var(--muted)}footer{padding:20px 0 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;color:var(--muted)}footer a{text-underline-offset:5px}.skip{position:fixed;top:-100px;left:15px;z-index:10;background:var(--surface);padding:10px}.skip:focus{top:10px}
-@media(min-width:1000px){.entry:first-child h3,.entry:nth-child(2) h3{font-size:44px}}
-@media(max-width:760px){.shell{width:calc(100% - 36px)}.hero{padding-top:36px}.hero-grid{grid-template-columns:1fr;gap:22px}.hero h1{font-size:clamp(40px,8vw,60px)}.intro{max-width:36em}.signature{margin-top:30px;padding-bottom:20px}.directory{grid-template-columns:repeat(2,minmax(0,1fr))}.entry,.entry:nth-child(n+3):nth-child(-n+5){grid-column:span 1;min-height:220px;padding:20px}.entry:last-child{grid-column:span 2}.entry h3{font-size:27px}.below{grid-template-columns:1fr;gap:24px;padding:40px 0}.below-label b{margin-bottom:0}.end-note{padding:22px;align-items:start;flex-direction:column;gap:8px}.top-inner{min-height:64px}}
-@media(max-width:480px){.wordmark{font-size:12px}.theme{padding:9px 12px;font-size:11px;gap:7px}.eyebrow{font-size:9px;letter-spacing:.035em}.hero h1{font-size:42px}.intro{font-size:13px}.signature{font-size:18vw}.signature small{font-size:8px}.index-head span{font-size:9px}.directory{grid-template-columns:1fr}.entry,.entry:nth-child(n+3):nth-child(-n+5),.entry:last-child{grid-column:span 1;min-height:193px;padding:20px 24px}.entry h3{font-size:34px;margin-top:12px}.entry p{margin-bottom:15px}.below-label b{font-size:24px}footer{font-size:9px}.detail-body{padding-left:0;padding-right:0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before{transition:none!important}}
+/* 03 NOTES / LOG：TOPページ内で展開するアコーディオン */
+.notes-accordion > summary{list-style:none;cursor:pointer}
+.notes-accordion > summary::-webkit-details-marker{display:none}
+.notes-accordion .accordion-arrow{font-size:24px;line-height:1.3;transform:rotate(0deg);transition:transform .15s ease}
+.notes-accordion[open] .accordion-arrow{transform:rotate(180deg)}
+.notes-accordion[open] > summary{background:var(--soft);border-left-color:var(--purple)}
+.submenu{list-style:none;padding:0 0 12px 56px;margin:0;border-left:3px solid transparent}
+.menu .submenu li{border-bottom:0}
+.subitem{display:grid;grid-template-columns:38px minmax(0,1fr) 24px;gap:16px;align-items:baseline;text-decoration:none;padding:15px 12px;border-left:3px solid transparent;transition:background .15s,border-color .15s}
+.subitem:hover,.subitem:focus-visible{background:var(--soft);border-left-color:var(--red)}
+.subnum{font:13px/1.8 Consolas,monospace;color:var(--green)}
+.subname{font-size:clamp(15px,2.3vw,18px);line-height:1.6;color:var(--purple);overflow-wrap:anywhere}
+.subname [lang=en]{font-size:.83em;color:var(--muted)}
+.subarrow{color:var(--green);font-size:18px}
+@media(max-width:600px){.submenu{padding-left:16px}.subitem{grid-template-columns:32px minmax(0,1fr) 18px;gap:9px;padding:14px 8px}.subname{font-size:16px}.subname [lang=en]{display:block;font-size:12px}}
 
+/* ABCD + TAGS: ローカル試作共通スタイル */
+.proof-bar{margin:22px 0 4px;padding:11px 14px;background:var(--mint);border-left:3px solid var(--green);color:var(--green);font-size:12px}
+.breadcrumb{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 6px;font-size:13px;color:var(--green)}
+.breadcrumb a:hover,.simple-links a:hover{text-decoration-thickness:2px}
+.content-title{font-size:clamp(25px,4.5vw,38px);line-height:1.5;color:var(--purple);margin:18px 0 6px;letter-spacing:.025em}
+.eyebrow{font:12px/1.8 Consolas,monospace;letter-spacing:.07em;color:var(--green);margin:0}
+.lead{color:var(--muted);font-size:15px;margin:12px 0 22px;max-width:740px}
+.section-title{font-size:20px;line-height:1.6;color:var(--purple);margin:38px 0 12px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.content-panel{border:1px solid var(--line);background:var(--bg);padding:20px 22px;margin:18px 0}
+.content-panel h3{color:var(--purple);margin:0 0 8px;font-size:17px}
+.content-panel p{margin:8px 0;font-size:14px}
+.content-panel ul{margin:8px 0 0;padding-left:23px}
+.content-panel li{margin:6px 0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}
+.cards .content-panel{margin:0}
+.card-link{font-size:18px;color:var(--purple);text-decoration-thickness:1px;text-underline-offset:5px;font-weight:600}
+.taglist{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0 3px}
+.tag{display:inline-block;text-decoration:none;border:1px solid var(--line);border-radius:100px;color:var(--green);background:var(--mint);padding:3px 11px;font-size:12px}
+.tag:hover,.tag:focus-visible{border-color:var(--green);text-decoration:underline}
+.placeholder{font-size:12px;color:var(--muted);padding:8px 11px;border-left:2px solid var(--line);margin-top:13px}
+.small-note{font-size:13px;color:var(--muted)}
+.simple-links{display:flex;gap:12px;flex-wrap:wrap;padding:15px 0;margin-top:14px;font-size:13px}
+.simple-links a{color:var(--green)}
+.field-label{font:11px/1.5 Consolas,monospace;letter-spacing:.08em;color:var(--green)}
+.entry-meta{font-size:12px;color:var(--muted)}
+.article-head{margin:14px 0 26px;border-bottom:2px solid var(--purple);padding-bottom:18px}
+.article-block{margin:29px 0}
+.article-block h2{font-size:21px;color:var(--purple);margin:0 0 8px}
+.article-block p{font-size:14px;color:var(--muted)}
+.toc{border:1px solid var(--line);padding:15px 18px;margin:20px 0}
+.toc strong{color:var(--purple)}.toc ol{margin:8px 0;padding-left:20px}.toc li{margin:4px 0}
+.question-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:25px 0}
+.map-node{border:1px solid var(--line);border-left:4px solid var(--purple);background:var(--bg);padding:0 16px}
+.map-node summary{font-weight:600;color:var(--purple);padding:16px 4px}
+.map-node p{font-size:13px;color:var(--muted);line-height:1.75;margin:0 0 17px}
+.map-center{border:2px solid var(--purple);text-align:center;padding:17px;margin:12px 0;background:var(--soft);color:var(--purple)}
+.shelf{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:18px 0}
+.shelf-card{border:1px solid var(--line);padding:16px;min-height:130px}
+.shelf-card h3{color:var(--purple);margin:0 0 8px;font-size:16px}
+.shelf-card p{font-size:13px;color:var(--muted);margin:8px 0}
+.filter-toolbar{border:1px solid var(--line);padding:18px;margin:20px 0}
+.filter-title{font-size:13px;color:var(--purple);font-weight:600;margin:0 0 8px}
+.filters{display:flex;gap:7px;flex-wrap:wrap}
+.filter-button{min-height:34px;border:1px solid var(--line);border-radius:100px;padding:5px 12px;font-size:12px;color:var(--green)}
+.filter-button[aria-pressed=true]{background:var(--purple);color:var(--bg);border-color:var(--purple)}
+.filter-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:15px}
+.filter-row label{font-size:13px;color:var(--muted)}
+.filter-row select,.filter-row input{background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:9px 10px;font:inherit;font-size:14px;max-width:100%}
+.result-count{margin:10px 0;font-size:13px;color:var(--muted)}
+.result-card[hidden]{display:none!important}
+.local-links{margin-top:20px;border-top:1px solid var(--line);padding-top:10px;font-size:13px;color:var(--muted)}
+.local-links a{color:var(--green);margin-right:12px}
+@media(max-width:600px){.cards,.question-map,.shelf{grid-template-columns:1fr}.content-panel{padding:15px}.content-title{font-size:25px}.filter-toolbar{padding:13px}}
 
-/* 2026.09.10 — REM's lavender / mint / lemon palette */
-:root{--lavender:#e3dcf3;--purple:#645089;--purple-line:#9f99d1;--hover:#d4c7ed;--header:#eee9f4}
-html[data-theme=dark]{--lavender:#29233b;--purple:#c8b5eb;--purple-line:#8875ab;--hover:#3b3053;--header:#1c2028}
-body{font-size:16px}
-.top{background:var(--header)}
-.wordmark{font-size:clamp(12px,1.5vw,15px)}
-.theme{font-size:14px}.theme:hover{border-color:var(--purple)}
-button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:var(--purple)}
-.mono{font-size:12px}
-.hero h1 em{color:var(--purple)}
-.intro{font-size:16px}
-.signature{font-size:clamp(26px,8.6vw,112px);letter-spacing:-.065em;color:var(--purple);gap:16px;user-select:text}
-.signature-text{display:block;white-space:nowrap;min-width:0}
-.signature small{font-size:12px;flex-shrink:0}
-.entry p,.entry strong,.entry .state{font-size:14px}
-.entry .number{font-size:13px}.entry .state{line-height:1.5}
-.entry.link-entry{background:var(--lavender)}
-.entry.link-entry:hover,.entry.link-entry:focus-visible{background:var(--hover)}
-.entry.link-entry h3{color:var(--purple)}
-.index-head h2,.below-label,summary{font-size:14px}
-.detail-body{font-size:16px}
-.below-label b{color:var(--purple)}
-.end-note p{font-size:16px}
-.entry .arrow{font-size:20px}
-.site-footer{display:block;padding:28px 30px;margin-bottom:24px;background:var(--lavender);border-top:3px solid var(--purple-line);font-family:inherit;font-size:14px}
-.footer-top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.footer-name{font:700 16px/1.5 Consolas,monospace;letter-spacing:-.04em;color:var(--purple)}
-.footer-nav{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-.footer-nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration-thickness:1px;text-underline-offset:5px}
-.footer-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;font-size:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--purple-line)}
-.site-notice{margin-top:12px;border-color:var(--purple-line)}
-.site-notice summary{padding:12px 0;min-height:44px}
-.site-notice .detail-body{padding:0 0 20px;max-width:48em;font-size:14px}
-.site-notice .detail-body p+p{margin-top:10px}
-.theme-label-short{display:none}
-@media(max-width:760px){.signature{font-size:clamp(26px,7.8vw,60px)}.intro{font-size:16px}.entry{min-height:230px}.entry h3{overflow-wrap:anywhere}.site-footer{padding:22px}}
-@media(max-width:480px){.signature{font-size:clamp(25px,7.8vw,38px);gap:10px}.signature small{display:none}.eyebrow{font-size:12px;letter-spacing:0}.index-head span{font-size:12px}.theme{font-size:12px;gap:7px;padding:9px 10px}.entry,.entry:nth-child(n+3):nth-child(-n+5),.entry:last-child{min-height:200px}.footer-nav{gap:20px}.footer-name{font-size:15px}.site-footer{padding:20px}.footer-meta{display:block}.footer-meta span{display:block;margin-top:6px}}
-@media(forced-colors:active){.entry,.site-footer,.social-link{border:1px solid CanvasText}}
-
-
-.link-main{max-width:960px;padding-top:28px}
-.back-link{font-size:14px;text-underline-offset:5px;display:inline-flex;min-height:44px;align-items:center}
-.link-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:24px 0 30px}
-.link-heading h1{font:500 clamp(52px,8vw,86px)/1 Consolas,monospace;letter-spacing:-.065em;margin:0;color:var(--purple)}
-.link-heading h1 span{color:var(--accent);font-weight:400}
-.link-heading .eyebrow{margin:0 0 12px}
-.link-heading p{font-size:16px;color:var(--muted);margin:0 0 4px}
-.social-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.social-list li{border-bottom:1px solid var(--line)}
-.social-link{display:grid;grid-template-columns:48px minmax(0,1fr) 40px;align-items:center;gap:24px;padding:30px 32px;text-decoration:none;position:relative;border-inline:1px solid var(--line);transition:background .18s}
-.social-list li:nth-child(1) .social-link{background:var(--lavender)}
-.social-list li:nth-child(2) .social-link{background:var(--soft)}
-.social-list li:nth-child(3) .social-link{background:var(--yellow)}
-.social-list li:nth-child(4) .social-link{background:var(--lavender)}
-.social-link:before{content:"";position:absolute;left:-1px;top:0;width:3px;height:0;background:var(--accent);transition:height .18s}
-.social-link:hover:before,.social-link:focus-visible:before{height:100%}
-.social-link:hover,.social-link:focus-visible{background:var(--hover)!important}
-.social-number{color:var(--accent);font:14px/1.4 Consolas,monospace;align-self:start;padding-top:8px}
-.social-name{display:block;font:500 clamp(32px,5vw,46px)/1.15 Consolas,monospace;letter-spacing:-.045em;color:var(--purple)}
-.social-address{display:block;font:14px/1.6 Consolas,monospace;letter-spacing:0;color:var(--ink);margin-top:10px;overflow-wrap:anywhere}
-.social-arrow{font-size:28px;color:var(--purple)}
-.external-note{margin:16px 0 36px;font-size:14px;color:var(--muted)}
-.link-main .site-footer{margin-top:0}
-@media(max-width:600px){.link-main{padding-top:16px}.link-heading{display:block;padding:20px 0 26px}.link-heading p{margin:18px 0 0}.social-link{grid-template-columns:28px minmax(0,1fr) 24px;gap:12px;padding:24px 18px}.social-address{font-size:13px}.social-arrow{font-size:24px}.social-number{font-size:12px}.link-heading h1{font-size:56px}}
-
-</style>
-<noscript><style>.theme{display:none}</style></noscript>
-</head>
-<body>
-<a class="skip" href="#links">リンク一覧へ進む</a>
-<header class="top"><div class="shell top-inner"><a class="wordmark" href="../home.html" data-theme-link aria-label="REMNET ホームへ">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">ダークモードへ</span></button></div></header>
-<main class="shell link-main" id="home">
-<a class="back-link" href="../home.html" data-theme-link>← ホームへ</a>
-<div class="link-heading">
-<div><div class="eyebrow mono">REMNET_K_B_D_S / 06</div><h1 id="links-title">LINKS<span>_</span></h1></div>
-<p>REMNETの、4つのリンク。</p>
-</div>
-<nav id="links" aria-labelledby="links-title" aria-describedby="external-note">
-<ol class="social-list">
-<li><a class="social-link" href="https://x.com/REMNET_K_B_D_S" target="_blank" rel="noopener noreferrer" aria-label="X：REMNET_K_B_D_S（外部サイト・新しいタブ）"><span class="social-number" aria-hidden="true">01 /</span><span><span class="social-name">X</span><span class="social-address">x.com/REMNET_K_B_D_S</span></span><span class="social-arrow" aria-hidden="true">↗</span></a></li>
-<li><a class="social-link" href="https://github.com/REMNET-K-B-D-S" target="_blank" rel="noopener noreferrer" aria-label="GitHub：REMNET-K-B-D-S（外部サイト・新しいタブ）"><span class="social-number" aria-hidden="true">02 /</span><span><span class="social-name">GitHub</span><span class="social-address">github.com/REMNET-K-B-D-S</span></span><span class="social-arrow" aria-hidden="true">↗</span></a></li>
-<li><a class="social-link" href="https://note.com/remnetkbds" target="_blank" rel="noopener noreferrer" aria-label="note：remnetkbds（外部サイト・新しいタブ）"><span class="social-number" aria-hidden="true">03 /</span><span><span class="social-name">note</span><span class="social-address">note.com/remnetkbds</span></span><span class="social-arrow" aria-hidden="true">↗</span></a></li>
-<li><a class="social-link" href="https://substack.com/@remnetkbds" target="_blank" rel="noopener noreferrer" aria-label="Substack：remnetkbds（外部サイト・新しいタブ）"><span class="social-number" aria-hidden="true">04 /</span><span><span class="social-name">Substack</span><span class="social-address">substack.com/@remnetkbds</span></span><span class="social-arrow" aria-hidden="true">↗</span></a></li>
-</ol>
-</nav>
-<p class="external-note" id="external-note">各リンクは外部サイトを新しいタブで開きます。</p>
-<footer class="site-footer">
-<div class="footer-top"><span class="footer-name">REMNET_K_B_D_S</span><nav class="footer-nav" aria-label="ページ下部の案内"><a href="../home.html" data-theme-link>ホーム</a><a href="#site-info">このサイトについて</a><a href="#home">上へ戻る ↑</a></nav></div>
-<details class="site-notice" id="site-info"><summary>このサイトについて</summary><div class="detail-body"><p>REMNET_K_B_D_Sの個人HPをつくっているところです。経験、言葉、制作の途中を置く場所として、少しずつ整えています。</p><p>少しずつ制作・更新しています。リンク先のX・GitHub・note・Substackは外部のサービスです。</p></div></details>
-<div class="footer-meta"><span>© 2026 REMNET_K_B_D_S</span><span>REMNET / <time datetime="2026-09-10">2026.09.10</time></span></div>
-</footer>
-</main>
-<script>
-
-(() => {
-  'use strict';
-  const root = document.documentElement;
-  const button = document.querySelector('.theme');
-  const label = document.getElementById('theme-label');
-  const localLinks = [...document.querySelectorAll('a[data-theme-link]')];
-  for (const link of localLinks) link.dataset.baseHref = link.getAttribute('href');
-  function apply(dark) {
-    root.dataset.theme = dark ? 'dark' : 'light';
-    button.setAttribute('aria-pressed', String(dark));
-    button.setAttribute('aria-label', dark ? 'ライトモードに切り替え' : 'ダークモードに切り替え');
-    label.textContent = dark ? 'ライトモードへ' : 'ダークモードへ';
-    for (const link of localLinks) {
-      const href = link.dataset.baseHref;
-      const hashAt = href.indexOf('#');
-      const path = hashAt < 0 ? href : href.slice(0, hashAt);
-      const hash = hashAt < 0 ? '' : href.slice(hashAt);
-      link.setAttribute('href', path + (dark ? '?theme=dark' : '') + hash);
-    }
-  }
-  button.addEventListener('click', () => apply(root.dataset.theme !== 'dark'));
-  apply(new URLSearchParams(location.search).get('theme') === 'dark');
-  function reveal(hash) {
-    let key;
-    try { key = decodeURIComponent(hash.slice(1)); } catch { return; }
-    const target = document.getElementById(key);
-    if (target && target.tagName === 'DETAILS') target.open = true;
-  }
-  for (const link of document.querySelectorAll('a[href^="#"]')) {
-    link.addEventListener('click', () => reveal(link.getAttribute('href')));
-  }
-  window.addEventListener('hashchange', () => reveal(location.hash));
-  reveal(location.hash);
+</style><style id="remnet-local-theme">/* REMNET local shared presentation */
+:root{--accent:#bd4028;--red:#bd4028;--ready:#17683a;--ready-bg:#e3f2e8}
+html[data-theme=dark]{--accent:#ff8b68;--red:#ff8b68;--ready:#91ff6a;--ready-bg:#203425}
+.preparing{color:var(--ready);font-weight:650}
+.status,.badge.preparing{color:var(--ready);background:var(--ready-bg)}
+html[data-theme=dark] .preparing{text-shadow:0 0 10px rgb(145 255 106 / .18)}
+.arrow,.notes-accordion .accordion-arrow{font-size:32px;line-height:1.25;color:var(--accent);display:inline-block;min-width:30px;text-align:center}
+.item{grid-template-columns:38px minmax(0,1fr) 36px}
+summary:not(.item)::marker{font-size:1.4em;color:var(--accent)}
+summary:focus-visible,a:focus-visible,button:focus-visible{outline-color:var(--accent)}
+.index-label,.eyebrow{border-left:3px solid var(--accent);padding-left:10px}
+.tools a:hover,.local-links a:hover,.breadcrumb a:hover{color:var(--accent)}
+.tools a:hover{border-color:var(--accent)}
+.content-panel h3,.shelf>h2{border-left:3px solid var(--accent);padding-left:10px}
+.local-note,.proof-bar{border-left:3px solid var(--accent)}
+.menu details[open]>summary{border-left-color:var(--accent)}
+.local-links{display:flex;flex-wrap:wrap;gap:8px 16px}
+.local-links a{min-height:36px;display:inline-flex;align-items:center;margin:0}
+.notice{border-top-color:var(--accent);margin-top:20px;margin-bottom:32px}
+.contacts{margin-bottom:36px}
+@media(max-width:600px){.item{grid-template-columns:28px minmax(0,1fr) 32px}.arrow,.notes-accordion .accordion-arrow{font-size:30px}}</style></head><body><a class="skip" href="#main">本文へ進む</a><div class="page"><header><h1>REMNET-K-B-D-S</h1><div class="controls"><div class="modes" role="group" aria-label="表示モード"><button type="button" data-mode="light" aria-pressed="true">ライトモード</button><button type="button" data-mode="dark" aria-pressed="false">ダークモード</button></div><p class="languages">Language&nbsp; <strong>JP</strong> / EN / ZH / ES / IT <small>日本語以外は<span class="preparing">準備中</span></small></p></div></header><nav class="breadcrumb" aria-label="ページ案内"><a href="../index.html" data-theme-link>← TOPへ</a><a href="../notes.html" data-theme-link>03 NOTES / LOG</a><a href="../library.html" data-theme-link>04 文献・資料</a><a href="../tags.html" data-theme-link>タグから探す</a></nav><main id="main"><p class="eyebrow">07 / LINK</p><h1 class="content-title">LINK</h1><p class="lead">REMNETの活動先と、関連する外部サイト。</p>
+<div class="cards">
+<article class="content-panel"><p class="eyebrow">01 / X</p><h3><a class="card-link" href="https://x.com/REMNET_K_B_D_S" target="_blank" rel="noopener noreferrer">X <span class="arrow" aria-hidden="true">↗</span></a></h3><p>x.com/REMNET_K_B_D_S</p></article>
+<article class="content-panel"><p class="eyebrow">02 / GITHUB</p><h3><a class="card-link" href="https://github.com/REMNET-K-B-D-S" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow" aria-hidden="true">↗</span></a></h3><p>github.com/REMNET-K-B-D-S</p></article>
+<article class="content-panel"><p class="eyebrow">03 / NOTE</p><h3><a class="card-link" href="https://note.com/remnetkbds" target="_blank" rel="noopener noreferrer">note <span class="arrow" aria-hidden="true">↗</span></a></h3><p>note.com/remnetkbds</p></article>
+<article class="content-panel"><p class="eyebrow">04 / SUBSTACK</p><h3><a class="card-link" href="https://substack.com/@remnetkbds" target="_blank" rel="noopener noreferrer">Substack <span class="arrow" aria-hidden="true">↗</span></a></h3><p>substack.com/@remnetkbds</p></article>
+</div><p class="small-note">各リンクは外部サイトを新しいタブで開きます。</p></main><footer><span>© 2026 REMNET-K-B-D-S<br><small>2026年9月10日 開設</small></span><a href="../index.html">TOPへ戻る ↑</a></footer></div><script>(() => {
+ const root=document.documentElement;
+ const buttons=[...document.querySelectorAll('[data-mode]')];
+ const links=[...document.querySelectorAll('a[href]')].filter(a=>{
+  const raw=a.getAttribute('href');
+  return raw && !raw.startsWith('#') && !/^[a-z][a-z0-9+.-]*:/i.test(raw) && !raw.startsWith('//') && /\.html?(?:[?#]|$)/i.test(raw);
+ });
+ links.forEach(a=>a.dataset.baseHref=a.getAttribute('href'));
+ function applyTheme(value){
+  const mode=value==='dark'?'dark':'light';
+  root.dataset.theme=mode;
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+  links.forEach(a=>{try{const url=new URL(a.dataset.baseHref,location.href);url.searchParams.set('theme',mode);a.setAttribute('href',url.href);}catch{}});
+  try{sessionStorage.setItem('remnet-top-theme',mode);sessionStorage.setItem('remnet-diary-theme',mode);}catch{}
+ }
+ let initial=new URLSearchParams(location.search).get('theme');
+ if(initial!=='dark'&&initial!=='light'){try{initial=sessionStorage.getItem('remnet-top-theme');}catch{}}
+ if(initial!=='dark'&&initial!=='light'){initial=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+ applyTheme(initial);
+ buttons.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.mode)));
 })();
-
-</script>
-</body>
-</html>
-
+</script></body></html>

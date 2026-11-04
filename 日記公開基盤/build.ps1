@@ -122,8 +122,8 @@ function Page([string]$title,[string]$content,[string]$prefix) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <meta name="color-scheme" content="light dark"><title>$safeTitle | REMNET</title>
-<link rel="stylesheet" href="${prefix}assets/diary.css?v=callouts-20260911"><script src="${prefix}assets/theme.js" defer></script></head>
-<body><a class="skip" href="#main">本文へ進む</a><header class="top"><div class="shell top-inner"><a class="wordmark" href="${prefix}../home.html">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><button class="theme" type="button" aria-label="ダークモードに切り替え" aria-pressed="false"><span class="disc" aria-hidden="true"></span><span id="theme-label">ダークモードへ</span></button></div></header>
+<link rel="stylesheet" href="${prefix}assets/diary.css?v=controls-20261105"><script src="${prefix}assets/theme.js?v=controls-20261105" defer></script></head>
+<body><a class="skip" href="#main">本文へ進む</a><header class="top"><div class="shell top-inner"><a class="wordmark" href="${prefix}../home.html">REMNET<span>_</span>K<span>_</span>B<span>_</span>D<span>_</span>S</a><div class="controls"><div class="modes" role="group" aria-label="表示モード"><button type="button" data-mode="light" aria-pressed="true">ライトモード</button><button type="button" data-mode="dark" aria-pressed="false">ダークモード</button></div><p class="languages">Language&nbsp; <strong>JP</strong> / EN / ZH / ES / IT <small>日本語以外は<span class="preparing">準備中</span></small></p></div></div></header>
 <main id="main" class="shell">$content</main>
 <footer class="shell"><span class="mono">REMNET_K_B_D_S / NOTES &amp; LOG</span><a href="${prefix}index.html">日記一覧へ ↗</a></footer></body></html>
 "@
