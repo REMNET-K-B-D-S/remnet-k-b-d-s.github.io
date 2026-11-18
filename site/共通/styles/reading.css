@@ -1,0 +1,146 @@
+
+.page-body .paper .rem-callout,
+.page-body .paper .markdown-alert{
+ --callout-accent:var(--紫);
+ border:1px solid var(--線);border-left:4px solid var(--callout-accent);
+ background:var(--薄い面);border-radius:5px;padding:16px 18px;margin:22px 0;
+ min-width:0;overflow-wrap:anywhere;color:var(--文字);
+}
+.page-body .paper [data-callout="tip"],
+.page-body .paper [data-callout="success"],
+.page-body .paper [data-callout="todo"],
+.page-body .paper .markdown-alert-tip{--callout-accent:var(--緑)}
+.page-body .paper [data-callout="important"],
+.page-body .paper [data-callout="question"],
+.page-body .paper [data-callout="abstract"],
+.page-body .paper .markdown-alert-important{--callout-accent:var(--紫)}
+.page-body .paper [data-callout="warning"],
+.page-body .paper [data-callout="danger"],
+.page-body .paper [data-callout="failure"],
+.page-body .paper [data-callout="bug"],
+.page-body .paper .markdown-alert-warning,
+.page-body .paper .markdown-alert-caution{--callout-accent:#e4b3a6}
+.page-body .paper [data-callout="quote"]{--callout-accent:var(--補足)}
+.page-body .paper .callout-title,
+.page-body .paper .markdown-alert-title{
+ display:flex;align-items:baseline;gap:9px;font-family:var(--本文書体);
+ font-size:1em;font-weight:700;line-height:1.6;color:var(--callout-accent);margin:0;
+}
+.page-body .paper .callout-title::before{content:"◇";flex-shrink:0;font-size:.85em}
+.page-body .paper [data-callout="warning"]>.callout-title::before,
+.page-body .paper [data-callout="danger"]>.callout-title::before{content:"△"}
+.page-body .paper [data-callout="success"]>.callout-title::before{content:"✓"}
+.page-body .paper [data-callout="question"]>.callout-title::before{content:"?"}
+.page-body .paper details.rem-callout>summary{cursor:pointer;list-style:none}
+.page-body .paper details.rem-callout>summary::-webkit-details-marker{display:none}
+.page-body .paper details.rem-callout>summary::after{content:"＋";margin-left:auto;flex-shrink:0}
+.page-body .paper details.rem-callout[open]>summary::after{content:"−"}
+.page-body .paper .callout-body{margin-top:10px}
+.page-body .paper .callout-body>:first-child{margin-top:0}
+.page-body .paper .callout-body>:last-child{margin-bottom:0}
+.page-body .paper .rem-callout .rem-callout{margin:14px 0}
+.page-body .paper .markdown-alert-title svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+.page-body .paper .markdown-alert-title{margin-bottom:10px}
+.page-body .paper .markdown-alert>:last-child{margin-bottom:0}
+html[data-callout-style="margin"] .page-body .paper .rem-callout,
+html[data-callout-style="margin"] .page-body .paper .markdown-alert{
+ border:0;border-left:3px solid var(--callout-accent);border-radius:0;
+ padding:8px 0 8px 18px;background:transparent;
+}
+html[data-callout-style="ledger"] .page-body .paper .rem-callout,
+html[data-callout-style="ledger"] .page-body .paper .markdown-alert{
+ border:1px solid var(--線);border-radius:0;padding:0;background:transparent;
+}
+html[data-callout-style="ledger"] .page-body .paper .callout-title,
+html[data-callout-style="ledger"] .page-body .paper .markdown-alert-title{
+ border-bottom:1px solid var(--線);padding:9px 14px;background:var(--薄い面);margin:0;
+}
+html[data-callout-style="ledger"] .page-body .paper .callout-body{margin:0;padding:14px}
+html[data-callout-style="ledger"] .page-body .paper .markdown-alert>p:not(.markdown-alert-title){padding:10px 14px}
+html[data-reading-style="letter"] .page-body .paper{
+ max-width:800px;width:calc(100% - 28px);margin:28px auto;
+ padding:clamp(25px,5vw,55px);border-radius:0;box-shadow:none;
+}
+html[data-reading-style="letter"] .page-body .paper::before{display:none}
+html[data-reading-style="letter"] .page-body .paper>h2{border-top:0;padding-top:0;margin-top:42px}
+html[data-reading-style="graph"] .page-body:not(.no-grid) .paper{
+ background-image:linear-gradient(var(--方眼) 1px,transparent 1px),linear-gradient(90deg,var(--方眼) 1px,transparent 1px);
+ background-size:24px 24px;
+}
+html[data-reading-style="graph"] .page-body .paper{border-radius:0;box-shadow:none}
+html[data-reading-style="graph"] .page-body .paper>h2{border-top:1px dashed var(--線);border-bottom:1px solid var(--線)}
+html[data-reading-style="ledger"] .page-body .paper{border-radius:0;box-shadow:5px 5px 0 var(--影)}
+html[data-reading-style="ledger"] .page-body .paper>h2{border-top:3px double var(--線);border-bottom:1px solid var(--線);padding:10px 0}
+html[data-reading-style="ledger"] .page-body .post-properties{border-radius:0;background:transparent}
+@media(max-width:480px){
+ .page-body .paper .rem-callout,.page-body .paper .markdown-alert{padding:12px}
+ html[data-callout-style="margin"] .page-body .paper .rem-callout{padding-left:12px}
+ html[data-reading-style="letter"] .page-body .paper{width:calc(100% - 20px);margin:12px auto;padding:22px 19px}
+}
+@media print{.page-body .paper details.rem-callout:not([open])>.callout-body{display:block!important}}
+
+.page-body .paper details.rem-callout p{font-size:inherit}
+.app .settings select{max-width:170px;min-width:0;background:var(--薄い面);border:1px solid var(--線);border-radius:3px;padding:6px;font-size:13px}
+
+html .page-body .paper .rem-callout.callout-art[data-callout]{
+ display:block;border:0;border-radius:0;background:transparent;box-shadow:none;
+ padding:0;margin:28px 0;color:#19171c;--callout-accent:#675184;
+}
+html .page-body .paper .callout-art[data-callout] .art-stage{padding:32px;border:1px solid #19171c}
+html .page-body .paper .callout-art[data-callout] .art-panel{margin:0;padding:0;min-width:0;overflow-wrap:anywhere}
+html .page-body .paper .callout-art[data-callout] .callout-title{
+ font-family:var(--本文書体);font-size:1em;line-height:1.6;margin:0;letter-spacing:0;border-radius:0;
+}
+html .page-body .paper .callout-art[data-callout] .callout-title::before{content:none}
+html .page-body .paper .callout-art[data-callout] .callout-body{
+ position:relative;margin:0;font-family:var(--本文書体);font-size:1em;line-height:1.8;
+}
+html .page-body .paper .callout-art[data-callout] .callout-body p{font-size:inherit;color:inherit}
+html .page-body .paper .callout-art[data-callout] .callout-body a{color:#493265}
+html .page-body .paper .callout-art[data-callout] .callout-body :is(h1,h2,h3,h4){color:inherit}
+html .page-body .paper .callout-art[data-callout] summary{display:flex;cursor:pointer;list-style:none}
+html .page-body .paper .callout-art[data-callout] summary::-webkit-details-marker{display:none}
+html .page-body .paper .callout-art[data-callout] summary::after{content:"＋";margin-left:auto;padding-left:10px}
+html .page-body .paper .callout-art[data-callout] details[open]>summary::after{content:"−"}
+html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .art-stage{background:#8f8d95}
+html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .art-panel{
+ background:#c7c7c7;border:2px solid;border-color:#f3f3f3 #38363d #38363d #f3f3f3;box-shadow:2px 2px 0 #26242a;
+}
+html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .callout-title{padding:4px 7px;color:#fff;background:#675184;font-weight:700}
+html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .callout-body{padding:20px 20px 20px 80px}
+html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .callout-body::before{
+ content:"!";position:absolute;left:20px;top:20px;display:grid;place-items:center;width:40px;height:40px;
+ color:#675184;border:2px solid #675184;font:900 24px/1 Georgia,serif;
+}
+html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .art-stage{
+ color:#151512;background-color:#f1ede3;
+ background-image:linear-gradient(rgba(20,20,18,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(20,20,18,.16) 1px,transparent 1px);
+ background-size:32px 32px;
+}
+html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .art-panel{position:relative;background:#f1ede3;border:1px solid #151512;padding-left:64px;color:#151512}
+html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .art-panel::before{
+ content:"!";position:absolute;left:0;top:0;bottom:0;width:64px;display:grid;place-items:center;
+ background:#a33624;color:#f1ede3;font:900 32px/1 Consolas,monospace;
+}
+html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .callout-title{color:#151512;background:transparent;padding:16px 20px 7px;font-weight:700}
+html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .callout-body{padding:0 20px 20px}
+@media(max-width:540px){
+ html .page-body .paper .callout-art[data-callout] .art-stage{padding:14px}
+ html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .callout-body{padding:14px}
+ html .page-body .paper :is([data-callout="lavender"],[data-callout="dialog"]).callout-art .callout-body::before{display:none}
+ html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .art-panel{padding-left:36px}
+ html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .art-panel::before{width:36px;font-size:25px}
+ html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .callout-title{padding:12px 12px 7px}
+ html .page-body .paper :is([data-callout="graph"],[data-callout="notice"]).callout-art .callout-body{padding:0 12px 12px}
+}
+
+
+html .page-body .paper [data-callout="dialog"].callout-art .art-panel{
+ background:var(--薄い面);color:var(--文字);border-color:var(--線);box-shadow:2px 2px 0 var(--影);
+}
+html .page-body .paper [data-callout="dialog"].callout-art .callout-title{background:var(--一覧);color:var(--紫)}
+html .page-body .paper [data-callout="dialog"].callout-art .callout-body::before{border-color:var(--紫);color:var(--紫)}
+html .page-body .paper [data-callout="notice"].callout-art .art-panel{background:var(--薄い面);color:var(--文字);border-color:var(--線)}
+html .page-body .paper [data-callout="notice"].callout-art .art-panel::before{background:var(--強調);color:var(--背景)}
+html .page-body .paper [data-callout="notice"].callout-art .callout-title{color:var(--文字)}
+html .page-body .paper :is([data-callout="dialog"],[data-callout="notice"]).callout-art .callout-body a{color:var(--紫)}

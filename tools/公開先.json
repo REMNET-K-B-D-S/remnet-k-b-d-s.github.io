@@ -1,0 +1,290 @@
+[
+  {
+    "source": "site/案内/home.html",
+    "public": "pages/home.html"
+  },
+  {
+    "source": "site/案内/about.html",
+    "public": "pages/about.html"
+  },
+  {
+    "source": "site/記録/index.html",
+    "public": "pages/records.html"
+  },
+  {
+    "source": "site/記録/research-ethics.html",
+    "public": "pages/research-ethics.html"
+  },
+  {
+    "source": "site/記事/index.html",
+    "public": "pages/articles.html"
+  },
+  {
+    "source": "site/文献・問い/library.html",
+    "public": "pages/library.html"
+  },
+  {
+    "source": "site/文献・問い/questions.html",
+    "public": "pages/questions.html"
+  },
+  {
+    "source": "site/文献・問い/tags.html",
+    "public": "pages/tags.html"
+  },
+  {
+    "source": "site/つながり/links.html",
+    "public": "pages/links.html"
+  },
+  {
+    "source": "site/連絡先/index.html",
+    "public": "pages/contact.html"
+  },
+  {
+    "source": "site/制作/index.html",
+    "public": "pages/studio.html"
+  },
+  {
+    "source": "site/制作/works.html",
+    "public": "pages/works.html"
+  },
+  {
+    "source": "site/つながり/shop.html",
+    "public": "pages/shop.html"
+  },
+  {
+    "source": "site/制作/spirit.html",
+    "public": "pages/spirit.html"
+  },
+  {
+    "source": "site/日記/index.html",
+    "public": "pages/diary.html"
+  },
+  {
+    "source": "site/日記/2026-11-19_REMNET新HP正式公開.html",
+    "public": "pages/diary-a25f3cf22abe.html"
+  },
+  {
+    "source": "site/日記/2026-09-11_書きたいことが沢山あるけど.html",
+    "public": "pages/diary-many-thoughts.html"
+  },
+  {
+    "source": "site/日記/2026-09-11_HOMEができた.html",
+    "public": "pages/diary-home-created.html"
+  },
+  {
+    "source": "site/制作/blue-terminal.html",
+    "public": "pages/blue-terminal.html"
+  },
+  {
+    "source": "site/制作/lavender-gray.html",
+    "public": "pages/lavender-gray.html"
+  },
+  {
+    "source": "site/制作/graph-paper.html",
+    "public": "pages/graph-paper.html"
+  },
+  {
+    "source": "site/制作/technical-ledger.html",
+    "public": "pages/technical-ledger.html"
+  },
+  {
+    "source": "site/制作/green-board.html",
+    "public": "pages/green-board.html"
+  },
+  {
+    "source": "site/制作/ascii-zine.html",
+    "public": "pages/ascii-zine.html"
+  },
+  {
+    "source": "site/制作/callout-study.html",
+    "public": "pages/callout-study.html"
+  },
+  {
+    "source": "site/制作/designs.html",
+    "public": "pages/designs.html"
+  },
+  {
+    "source": "site/制作/callouts.html",
+    "public": "pages/callouts.html"
+  },
+  {
+    "source": "site/案内/search.html",
+    "public": "pages/search.html"
+  },
+  {
+    "source": "site/案内/site-policy.html",
+    "public": "pages/site-policy.html"
+  },
+  {
+    "source": "site/案内/readme.html",
+    "public": "pages/readme.html"
+  },
+  {
+    "source": "site/index.html",
+    "public": "index.html"
+  },
+  {
+    "source": "site/.nojekyll",
+    "public": ".nojekyll"
+  },
+  {
+    "source": "README.md",
+    "public": "README.md"
+  },
+  {
+    "source": "site/案内/サイトポリシー_研究・取材に関する方針.md",
+    "public": "サイトポリシー_研究・取材に関する方針.md"
+  },
+  {
+    "source": "site/共通/images/diary/2026-11-19/03ad5d2af5a0e0350e1622e7c9e4ce4ede94c51785695e621eae0d6cc734f831.png",
+    "public": "assets/images/diary/2026-11-19/03ad5d2af5a0e0350e1622e7c9e4ce4ede94c51785695e621eae0d6cc734f831.png"
+  },
+  {
+    "source": "site/共通/images/diary/2026-11-19/050dd13c99fecae690b521a3d29ee6ccbdac79feac64f905c798053e813ac85e.png",
+    "public": "assets/images/diary/2026-11-19/050dd13c99fecae690b521a3d29ee6ccbdac79feac64f905c798053e813ac85e.png"
+  },
+  {
+    "source": "site/共通/images/diary/2026-11-19/542ba7d2cefedd9cd8a8d0d31dbd05b72e6ddb51145ba2f30888824164d77fce.png",
+    "public": "assets/images/diary/2026-11-19/542ba7d2cefedd9cd8a8d0d31dbd05b72e6ddb51145ba2f30888824164d77fce.png"
+  },
+  {
+    "source": "site/共通/scripts/app.js",
+    "public": "assets/scripts/app.js"
+  },
+  {
+    "source": "site/共通/scripts/pages.js",
+    "public": "assets/scripts/pages.js"
+  },
+  {
+    "source": "site/共通/scripts/panels.js",
+    "public": "assets/scripts/panels.js"
+  },
+  {
+    "source": "site/共通/scripts/reader.js",
+    "public": "assets/scripts/reader.js"
+  },
+  {
+    "source": "site/共通/scripts/search.js",
+    "public": "assets/scripts/search.js"
+  },
+  {
+    "source": "site/共通/scripts/tabs.js",
+    "public": "assets/scripts/tabs.js"
+  },
+  {
+    "source": "site/共通/styles/colors.css",
+    "public": "assets/styles/colors.css"
+  },
+  {
+    "source": "site/共通/styles/panels.css",
+    "public": "assets/styles/panels.css"
+  },
+  {
+    "source": "site/共通/styles/reading.css",
+    "public": "assets/styles/reading.css"
+  },
+  {
+    "source": "site/共通/styles/site.css",
+    "public": "assets/styles/site.css"
+  },
+  {
+    "source": "site/作品/design-lab/CONTENT-LICENSE.md",
+    "public": "works/design-lab/CONTENT-LICENSE.md"
+  },
+  {
+    "source": "site/作品/design-lab/LICENSE",
+    "public": "works/design-lab/LICENSE"
+  },
+  {
+    "source": "site/作品/design-lab/index.html",
+    "public": "works/design-lab/index.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/ascii-zine.html",
+    "public": "works/design-lab/pages/ascii-zine.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/blue-terminal.html",
+    "public": "works/design-lab/pages/blue-terminal.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/callout-lab.html",
+    "public": "works/design-lab/pages/callout-lab.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/graph-paper-grid.html",
+    "public": "works/design-lab/pages/graph-paper-grid.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/green-information-board.html",
+    "public": "works/design-lab/pages/green-information-board.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/lavender-gray.html",
+    "public": "works/design-lab/pages/lavender-gray.html"
+  },
+  {
+    "source": "site/作品/design-lab/pages/technical-ledger.html",
+    "public": "works/design-lab/pages/technical-ledger.html"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/ASCII-ZINE.md",
+    "public": "works/design-lab/recipes/ASCII-ZINE.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/コールアウト比較実験.md",
+    "public": "works/design-lab/recipes/コールアウト比較実験.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/全体設計と親ページ.md",
+    "public": "works/design-lab/recipes/全体設計と親ページ.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/方眼グリッド.md",
+    "public": "works/design-lab/recipes/方眼グリッド.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/紙の台帳と技術資料.md",
+    "public": "works/design-lab/recipes/紙の台帳と技術資料.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/緑一色の情報盤.md",
+    "public": "works/design-lab/recipes/緑一色の情報盤.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/薄紫と灰色.md",
+    "public": "works/design-lab/recipes/薄紫と灰色.md"
+  },
+  {
+    "source": "site/作品/design-lab/recipes/青画面と白文字.md",
+    "public": "works/design-lab/recipes/青画面と白文字.md"
+  },
+  {
+    "source": "site/作品/spirit/animation.js",
+    "public": "works/spirit/animation.js"
+  },
+  {
+    "source": "site/作品/spirit/clean-plate.png",
+    "public": "works/spirit/clean-plate.png"
+  },
+  {
+    "source": "site/作品/spirit/gsap.min.js",
+    "public": "works/spirit/gsap.min.js"
+  },
+  {
+    "source": "site/作品/spirit/opening.html",
+    "public": "works/spirit/opening.html"
+  },
+  {
+    "source": "site/作品/spirit/scene.png",
+    "public": "works/spirit/scene.png"
+  },
+  {
+    "source": "site/作品/spirit/style.css",
+    "public": "works/spirit/style.css"
+  },
+  {
+    "source": "site/作品/spirit/scene.png",
+    "public": "assets/images/spirit.png"
+  }
+]

@@ -16,7 +16,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Build existing REMNET pages
         shell: pwsh
-        run: ./build.ps1
+        run: ./tools/build.ps1
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

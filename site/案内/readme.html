@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="remnet-group" content="案内"><meta name="remnet-tags" content="サイトの説明,研究,取材,ライセンス"><title>README.md — REMNET_K_B_D_S</title><link rel="stylesheet" href="../共通/styles/site.css"><style>.paper{overflow-wrap:anywhere}</style><script src="../共通/scripts/reader.js" defer></script></head>
+<body class="page-body" data-page="readme"><article class="paper"><div class="page-label"><span>案内 ／ README.md</span><span>REMNET_K_B_D_S</span></div>
+<h1 id="remnet_k_b_d_s">REMNET_K_B_D_S</h1>
+<p>REMNET_K_B_D_Sという個人が運営する、思考・記録・文献・制作のデジタルアーカイブです。</p>
+<ul>
+<li>サイト：https://remnet-k-b-d-s.github.io/</li>
+<li>リポジトリ：https://github.com/REMNET-K-B-D-S/remnet-k-b-d-s.github.io</li>
+</ul>
+<h2 id="section">このサイトについて</h2>
+<p>日記、調査や出来事の記録、テーマについての記事、文献への参照、制作した作品を整理して公開します。
+本人が公開する範囲を選び、完成したものだけでなく、考えや制作の過程も残します。
+大学・研究機関などの公式見解や、査読済みの研究成果を示すサイトではありません。</p>
+<p>企画・構成・文章・公開内容の判断はREMNET_K_B_D_Sが行い、
+ChatGPTやCodexを文章の整理・デザイン・HTML制作の補助に活用しています。</p>
+<h2 id="section-1">主な機能</h2>
+<ul>
+<li>分類と一覧からのページ移動、タイトル・本文・タグの検索</li>
+<li>複数タブ、PCでのタブ並べ替え、比較表示</li>
+<li>左右のパネル幅の調整、分類の折りたたみ</li>
+<li>プロパティ付きの日記、コールアウト</li>
+<li>本文のデザインと表示設定の切替</li>
+</ul>
+<p>ライトモードも暗めの配色にしているのは、意図したデザインです。
+利用できる操作や設定の保存は、端末・ブラウザの条件によって異なります。</p>
+<h2 id="section-2">構成と更新方法</h2>
+<table>
+<thead>
+<tr>
+<th>場所</th>
+<th>入っているもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>site/index.html</td>
+<td>左の一覧・タブ・本文を表示するHPの枠</td>
+</tr>
+<tr>
+<td>site/案内</td>
+<td>ホーム、REMNETについて、README・方針の表示</td>
+</tr>
+<tr>
+<td>site/日記</td>
+<td>日記一覧と、Markdownから作る日記ページ</td>
+</tr>
+<tr>
+<td>site/記録、site/記事</td>
+<td>記録・記事の一覧と本文</td>
+</tr>
+<tr>
+<td>site/文献・問い</td>
+<td>文献、問い、タグから探すページ</td>
+</tr>
+<tr>
+<td>site/制作</td>
+<td>制作の案内、作品の紹介、コールアウトの説明</td>
+</tr>
+<tr>
+<td>site/つながり、site/連絡先</td>
+<td>活動先・販売の案内と連絡先</td>
+</tr>
+<tr>
+<td>site/作品</td>
+<td>元のデザインで動く作品本体・説明資料・ライセンス</td>
+</tr>
+<tr>
+<td>site/共通</td>
+<td>見た目、操作、検索データ、日記画像</td>
+</tr>
+<tr>
+<td>tools</td>
+<td>公開用ファイルの生成、検索更新、保存場所と公開URLの対応</td>
+</tr>
+<tr>
+<td>.github/workflows/pages.yml</td>
+<td>GitHub Pagesへの公開処理</td>
+</tr>
+</tbody>
+</table>
+<p>日記の文章はMarkdownの原稿を編集し、PCの日記準備処理からHTMLと画像を作ります。生成された日記HTMLや検索データを直接編集する運用ではありません。
+このリポジトリには日記の下書き・私的資料・Obsidian保管庫を入れません。原稿の準備から公開するまでの道具は、PC側で別に管理しています。</p>
+<p>READMEの原稿はルートのREADME.mdです。
+研究・取材方針の原稿はsite/案内/サイトポリシー_研究・取材に関する方針.mdです。
+対応するreadme.htmlとsite-policy.htmlは公開用ビルドで更新します。</p>
+<p>PowerShell 7で次を実行すると、方針ページと検索登録を更新・検査し、公開用ファイルを_siteへ出力します。</p>
+<pre><code class="language-powershell">pwsh -File ./tools/build.ps1
+</code></pre>
+<p>既存の出力先は上書きしません。保存するフォルダと公開URLはtools/公開先.jsonとパス.ps1で対応させています。
+これにより、日記や作品を役割別の場所へ整理しても、現在の正式URL・本文ページ・画像URLは維持します。
+新しい通常ページは該当する分類の中へ置き、固有のdata-pageとtitle、remnet-groupを指定します。必要ならremnet-tagsでタグを指定します。</p>
+<p>以前の入口へ案内するだけだった旧構成（ルートの古いHTML、About、Links、日記公開基盤、SPIRIT表紙_試作05）は、公開対象から外しました。現在のサイトの入口は <a href="https://remnet-k-b-d-s.github.io/">https://remnet-k-b-d-s.github.io/</a> です。</p>
+<p>GitHubへの送信は公開処理につながるため、実際に送る変更と公開用の出力を確認してから反映します。</p>
+<h2 id="section-3">文章・画像・コードの利用について</h2>
+<p>利用条件は作品ごとの表示とライセンスを確認してください。
+本リポジトリ全体へ、一律にMIT LicenseやCC BY 4.0を付与する趣旨ではありません。</p>
+<p>収録するデザイン作品集では、コードにMIT License、
+オリジナルの解説文・デザイン解説・制作資料にCC BY 4.0を適用しています。
+第三者の名称・ロゴ・リンク先の資料などは、その許諾の対象とは限りません。</p>
+<ul>
+<li><a href="https://github.com/REMNET-K-B-D-S/not-ai-looking-design-lab/blob/main/LICENSE">作品集のコードのライセンス</a></li>
+<li><a href="https://github.com/REMNET-K-B-D-S/not-ai-looking-design-lab/blob/main/CONTENT-LICENSE.md">作品集の文章・デザイン資料のライセンス</a></li>
+</ul>
+<p>GitHub利用規約、明示したライセンスや法令上認められる利用を除き、追加の許諾が必要な場合は、利用前に連絡してください。
+この案内は、適法な引用等に本人の事前許可が常に必要だとするものではありません。</p>
+<h2 id="section-4">研究・調査・取材に関する意思</h2>
+<p>公開していることは、運営者本人が研究参加者・観察対象・取材協力者となることへの同意ではありません。</p>
+<p>本人を対象とする人物分析、複数サービスにまたがる活動履歴の継続的な収集、
+特定可能な形での事例化、取材への協力を計画する場合は、
+目的・方法・扱う情報・公表方法を事前に説明し、本人の意思を確認するよう求めます。</p>
+<p>参加・協力するかどうかは、説明された内容を確認したうえで、運営者本人が個別に判断します。</p>
+<p>これは運営者自身の意思と要望の表明です。
+GitHubの規約、作品ごとのライセンス、適用法令によって認められる利用を、
+この案内だけで一律に禁止できると主張するものではありません。</p>
+<p>詳細は<a href="site-policy.html" data-page="site-policy">REMNETサイトポリシー｜研究・取材に関する方針</a>を参照してください。</p>
+<p><a href="site-policy.html" data-page="site-policy">HP内で方針を読む</a></p>
+<h2 id="section-5">連絡先</h2>
+<p><a href="../連絡先/index.html" data-page="contact">サイトの連絡先ページ</a>からお願いします。
+未公開の個人情報や私的通信を、公開Issueへ投稿しないでください。</p>
+
+<footer class="page-end"><a href="about.html" data-page="about">← REMNETについて</a><a href="readme.html" data-page="readme">README.md</a><a href="site-policy.html" data-page="site-policy">研究・取材に関する方針</a></footer></article></body></html>
