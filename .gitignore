@@ -1,7 +1,3 @@
-/_site/
-/preview_*/
-**/preview_*/
-**/日記/下書き/
-**/.obsidian/
-*.before-20260910
-**/*.before-20260910
+_site/
+preview_*/
+desktop.ini

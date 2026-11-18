@@ -1,0 +1,82 @@
+
+.app .tree a,.app .tree summary{font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+.app .tree a::before{flex-shrink:0}
+.app .tab{font-size:14px;line-height:1.4;padding:4px 13px}
+.app .workspace{grid-template-rows:44px 36px minmax(0,1fr)}
+.app .outline h2,.app .outline button{font-size:14px;line-height:1.65}
+.app .outline button{overflow-wrap:anywhere;padding:8px 4px}
+.app .outline button[data-level="2"]{padding-left:16px}
+.app .outline button.active{color:var(--文字)}
+.panel-splitter{display:none;touch-action:none;user-select:none;cursor:col-resize;z-index:15;border:0;background:transparent;padding:0;border-radius:0}
+.panel-splitter:hover,.panel-splitter:focus-visible,.panel-splitter.dragging{background:var(--強調)}
+.panel-resizing,.panel-resizing *{cursor:col-resize!important;user-select:none!important}
+.panel-resizing iframe{pointer-events:none}
+@media(min-width:741px){
+ .app .desk{grid-template-columns:var(--left-width,260px) minmax(0,1fr);transition:none}
+ .app .desk.closed{grid-template-columns:0 minmax(0,1fr)}
+ .left-splitter{display:block;position:absolute;left:-4px;top:0;bottom:0;width:8px}
+ .closed .left-splitter{display:none}
+ .app .workspace{grid-column:2}
+ .read-tools #where{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .read-buttons{flex-shrink:0}
+}
+@media(min-width:1151px){
+ .app .readers{grid-template-columns:minmax(360px,1fr) 8px var(--right-width,200px)}
+ .app .outline{grid-column:3;min-width:0;padding:22px 12px;border-left:0}
+ .right-splitter{display:block;grid-column:2;grid-row:1}
+ .app .readers.outline-closed{grid-template-columns:minmax(0,1fr)}
+ .outline-closed .outline,.outline-closed .right-splitter{display:none}
+ .app .readers.comparing{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .comparing .right-splitter{display:none}
+}
+@media(max-width:1150px){
+ .app .outline.shown{width:min(300px,calc(100% - 20px))}
+}
+@media(max-width:740px){
+ .app .desk,.app .desk.closed{grid-template-columns:minmax(0,1fr)}
+ .app .workspace{grid-column:1}
+ .app .tree a{padding:6px 7px}
+ .app .read-tools{gap:4px;padding-inline:8px;font-size:10px}
+ .app .read-tools #where{flex:1;min-width:0;max-width:none}
+ .app .read-buttons{flex-shrink:0;gap:4px}
+}
+@media print{.panel-splitter{display:none!important}}
+
+
+.app .side-title{display:block;margin:0 0 4px;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+.app .side-title label{cursor:text}
+.app .search-label{margin:0 0 8px;max-width:none}
+.app #search{margin-top:0}
+.app .search-hint,.app .side-foot{font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+.app .search-hint{padding:4px 0;margin:10px 0}
+.app .side-foot{margin:16px 0 0;padding-top:12px}
+.app .statusbar{font-size:13px;line-height:1.5;min-height:27px;flex-wrap:wrap;gap:3px 12px;padding:4px 12px}
+.app{grid-template-rows:auto minmax(0,1fr) auto}
+
+
+.app .search-hint:empty{display:none}
+
+
+.app .sidebar-search{display:flex;gap:5px;align-items:stretch}
+.app .sidebar-search #search{min-width:0;flex:1}
+.app .sidebar-search button{flex-shrink:0;padding:5px 9px;font-size:13px}
+
+
+.app .sidebar-controls{display:flex;align-items:stretch;gap:6px;margin:0 0 12px}
+.app .sidebar-controls .sidebar-search{flex:1;min-width:0;margin:0}
+.app .sidebar-controls #search{padding:8px 9px;font-size:14px}
+.app .icon-button{display:grid;place-items:center;min-width:34px;min-height:36px;padding:6px;background:transparent;border-color:transparent;color:var(--補足)}
+.app .icon-button:hover{background:var(--薄い面);border-color:var(--線);color:var(--文字)}
+.app .sidebar-search .icon-button{border-color:var(--線)}
+.app .tree summary{display:flex;align-items:center;gap:9px;list-style:none;padding:8px 5px}
+.app .tree summary::-webkit-details-marker{display:none}
+.app .tree summary::before{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);flex-shrink:0;transition:transform .12s}
+.app .tree details[open]>summary::before{transform:rotate(45deg)}
+.app #fold-all.all-closed svg{transform:rotate(180deg)}
+.app .tab-slot{position:relative}
+.app .tab-slot[draggable=true] .tab{cursor:grab}
+.app .tab-slot.dragging{opacity:.45}
+.app .tab-slot.drop-before::before,.app .tab-slot.drop-after::after{content:"";position:absolute;top:3px;bottom:3px;width:3px;background:var(--強調);z-index:2;pointer-events:none}
+.app .tab-slot.drop-before::before{left:0}
+.app .tab-slot.drop-after::after{right:0}
+.policy-links{display:flex;gap:1em;flex-wrap:wrap}.policy-links a{color:inherit;text-underline-offset:3px}

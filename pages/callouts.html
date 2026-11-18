@@ -1,0 +1,64 @@
+<!doctype html><html lang="ja" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>コールアウトとデザイン — REMNET_K_B_D_S</title><link rel="stylesheet" href="../assets/styles/site.css"><script src="../assets/scripts/reader.js" defer></script></head><body class="page-body" data-page="callout-guide"><article class="paper"><div class="page-label"><span>制作 ／ コールアウトとデザイン</span><span class="name">REMNET_K_B_D_S</span></div><!-- ここから本文。文章を直すときは、この下を編集します。 --><h1 id="section">コールアウトとデザイン</h1>
+<p>日記にはMarkdownで囲みを書き、読むときは右上の「見た目」から好きな形を選べます。文章を直さず、囲み・罫線・余白だけを切り替えます。</p>
+<h2 id="section-1">まず試してみる</h2>
+<aside class="rem-callout" data-callout="note" aria-label="いつものメモ"><p class="callout-title">いつものメモ</p><div class="callout-body"><p>ここは日記の中の補足です。上の「見た目」を開き、本文のデザインとコールアウトの形を変えてみてください。</p>
+<p><strong>太字</strong>、箇条書き、リンクなども使えます。</p>
+<ul>
+<li>書くときは、意味に合う種類を選ぶ。</li>
+<li>読むときは、好きな見せ方で読む。</li>
+</ul>
+</div></aside>
+<h3 id="section-2">書き方</h3>
+<pre><code class="language-markdown">&gt; [!NOTE] いつものメモ
+&gt; ここは日記の中の補足です。
+&gt;
+&gt; - 箇条書きも書けます。
+</code></pre>
+<h2 id="section-3">普段使う囲み</h2>
+<aside class="rem-callout" data-callout="tip" aria-label="小さなヒント"><p class="callout-title">小さなヒント</p><div class="callout-body"><p>後で読み返す自分に、役に立つことを一つ。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="important" aria-label="大切なこと"><p class="callout-title">大切なこと</p><div class="callout-body"><p>本文の中でも、特に残しておきたいこと。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="warning" aria-label="注意"><p class="callout-title">注意</p><div class="callout-body"><p>判断する前に確かめておきたいこと。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="question" aria-label="まだ答えのない問い"><p class="callout-title">まだ答えのない問い</p><div class="callout-body"><p>なぜそうなったのだろう。分からないままのことも残せます。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="quote" aria-label="引用"><p class="callout-title">引用</p><div class="callout-body"><p>ここは引用の書き方を試すための見本文です。実際の文章を引用する際は、出典も本文へ書きます。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="success" aria-label="できたこと"><p class="callout-title">できたこと</p><div class="callout-body"><p>今日、一つ進んだこと。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="example" aria-label="具体例"><p class="callout-title">具体例</p><div class="callout-body"><p>理屈だけでなく、小さな例を添えたいとき。</p>
+</div></aside>
+<aside class="rem-callout" data-callout="abstract" aria-label="要約"><p class="callout-title">要約</p><div class="callout-body"><p>長い記録の要点を先に置きたいとき。</p>
+</div></aside>
+<h2 id="section-4">折りたたんで置く</h2>
+<details class="rem-callout" data-callout="note"><summary class="callout-title">必要なときに開く補足</summary><div class="callout-body"><p>このタイトルを押すと開きます。もう一度押すと閉じます。</p>
+<h2 id="callout-heading-1">補足の中の見出し</h2>
+<p>本文の見出し一覧から移動した場合も、囲みを開いて読めるようにしています。</p>
+</div></details>
+<details class="rem-callout" data-callout="tip" open><summary class="callout-title">最初から開いておく補足</summary><div class="callout-body"><p>こちらは最初から開いています。長くなったら閉じられます。</p>
+</div></details>
+<pre><code class="language-markdown">&gt; [!NOTE]- 最初は閉じる
+&gt; 補足の本文。
+
+&gt; [!TIP]+ 最初は開く
+&gt; 補足の本文。
+</code></pre>
+<h2 id="section-5">囲みの中にも囲みを置く</h2>
+<aside class="rem-callout" data-callout="note" aria-label="外側のメモ"><p class="callout-title">外側のメモ</p><div class="callout-body"><p>補足を二段に分けたいとき。</p>
+<aside class="rem-callout" data-callout="question" aria-label="メモから生まれた問い"><p class="callout-title">メモから生まれた問い</p><div class="callout-body"><p>何を、次に確かめたいだろう。</p>
+</div></aside>
+</div></aside>
+<h2 id="section-6">気分で見せ方を変える</h2>
+<p>「見た目」の「本文のデザイン」では、いつものノート・余白の手紙・方眼のノート・記録の台帳を選べます。</p>
+<p>「コールアウトの形」では、囲み・欄外メモ・台帳の欄を選べます。本文デザインとは別に選べます。</p>
+<p>表示の設定は、このブラウザに保存できる場合に記憶します。文章や日記の元データは書き換えません。「標準に戻す」で、いつものノートと囲みに戻せます。</p>
+<h2 id="section-7">過去の作品から使う</h2>
+<p>過去の実験の「見せ方」を日常の読書画面に取り入れました。元の作品もそのまま残しています。</p>
+<ul>
+<li><a href="graph-paper.html" data-page="lab3">方眼の実験を読む</a></li>
+<li><a href="technical-ledger.html" data-page="lab4">紙の台帳の実験を読む</a></li>
+<li><a href="callout-study.html" data-page="lab7">コールアウト比較実験を読む</a></li>
+</ul>
+<p>作品全体の色や画面構成をそのまま置き換える機能ではなく、このHPの書体と配色に合わせた使い方です。</p>
+<!-- 本文ここまで。 --><footer class="page-end"><a href="home.html" data-page="home">← ホームへ</a></footer></article></body></html>

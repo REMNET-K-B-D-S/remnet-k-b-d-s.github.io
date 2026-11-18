@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>05 緑一色の情報盤｜REMNET Design Archive</title>
+  <style>
+    :root { --paper:#f2f3eb; --green:#008b62; --pale:#dbe8de; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--green); background:var(--paper); font:15px/1.35 "Arial Narrow","BIZ UDPGothic","Yu Gothic",sans-serif; }
+    a { color:inherit; }
+    .board { width:min(calc(100% - 24px),1080px); margin:18px auto 50px; }
+    header { display:grid; grid-template-columns:1fr auto; align-items:end; padding:0 0 16px; border-bottom:2px solid var(--green); }
+    .kicker { margin:0; font:700 12px Consolas,monospace; letter-spacing:.16em; }
+    h1 { margin:8px 0 0; font-size:clamp(2.5rem,7vw,6.4rem); font-weight:500; line-height:.88; letter-spacing:-.06em; }
+    .month { font-size:clamp(3rem,8vw,7rem); line-height:.8; }
+    .calendar { display:grid; grid-template-columns:repeat(4,1fr); border-left:1px solid var(--green); }
+    .event { min-height:180px; padding:14px; border-right:1px solid var(--green); border-bottom:1px solid var(--green); }
+    .event.wide { grid-column:span 2; }
+    .event.tall { grid-row:span 2; min-height:360px; }
+    .day { display:block; margin-bottom:18px; font:700 13px Consolas,monospace; }
+    .event h2 { margin:0 0 10px; font-size:clamp(1.2rem,2.5vw,2.25rem); line-height:1; text-transform:uppercase; }
+    .event p { margin:0; color:#176f57; font-size:.8rem; }
+    .animal { display:grid; place-items:center; font-size:clamp(4rem,10vw,8rem); font-weight:900; transform:rotate(-7deg); }
+    .notes { display:grid; grid-template-columns:1fr 1fr; gap:30px; padding:40px 0; }
+    .notes h2 { margin:0 0 12px; font-size:1rem; text-transform:uppercase; }
+    .notes p { margin:0; color:#176f57; }
+    pre { margin:14px 0 0; padding:14px; overflow:auto; color:var(--green); background:var(--pale); border-left:5px solid var(--green); font:12px/1.5 Consolas,monospace; }
+    footer { display:flex; justify-content:space-between; gap:20px; padding-top:14px; border-top:2px solid var(--green); }
+    .back { font-weight:800; }
+    @media(max-width:720px){ header{grid-template-columns:1fr}.month{margin-top:20px}.calendar{grid-template-columns:repeat(2,1fr)}.event.wide{grid-column:span 2}.notes{grid-template-columns:1fr}.event{min-height:150px} }
+  </style>
+</head>
+<body>
+  <main class="board">
+    <header><div><p class="kicker">REMNET INFORMATION PROGRAM / 05</p><h1>ONE COLOR<br>BOARD</h1></div><div class="month">08</div></header>
+    <section class="calendar" aria-label="デザイン情報盤">
+      <article class="event wide"><span class="day">01—02</span><h2>LIMIT YOUR COLORS</h2><p>色を減らすと、情報の配置そのものが前へ出る。</p></article>
+      <article class="event"><span class="day">03</span><h2>GREEN<br>TYPE</h2><p>#008B62</p></article>
+      <article class="event"><span class="day">04</span><h2>NO<br>SHADOW</h2><p>立体感は罫線に任せる。</p></article>
+      <article class="event tall"><span class="day">05</span><h2>REMNETの雑感</h2><p>一色しか使わないと、急に「何かの予定表」「誰かの小冊子」「地下のイベント告知」のような人格が出てくる。</p><p style="margin-top:18px">色を足したくなっても、いったん我慢。人間は制限があると、配置で遊び始める。</p></article>
+      <article class="event animal" aria-label="正体不明の四足動物">犬?</article>
+      <article class="event wide"><span class="day">06—09</span><h2>INFORMATION HAS RHYTHM</h2><p>大きい文字、小さい文字、空欄。全部が同じ強さではない。</p></article>
+      <article class="event"><span class="day">10</span><h2>AI?</h2><p>判定不能。それでよし。</p></article>
+      <article class="event"><span class="day">11</span><h2>HUMAN?</h2><p>こちらも判定不能。</p></article>
+    </section>
+    <section class="notes">
+      <div><h2>心理ハック仮説</h2><p>限られた印刷色のような制約があると、流行の配色提案よりも、実際の印刷費や機材の都合から生まれたデザインに見えやすいかもしれない。</p></div>
+      <div><h2>再現の芯</h2><pre><code>:root {
+  --paper: #f2f3eb;
+  --green: #008b62;
+}
+.board { color: var(--green); }
+.cell  { border: 1px solid currentColor; }</code></pre></div>
+    </section>
+    <footer><a class="back" href="../index.html">← INDEXへ戻る</a><span>SINCE 2026-08-03 / 企画・制作：REMNET_K_B_D_S</span></footer>
+  </main>
+<p style="font-size:12px;padding:12px">REMNET_K_B_D_Sの公開HPへの収録にあたり、参照先と制作者表記を整理しています。作品の配色・構成とライセンスは維持しています。</p></body>
+</html>

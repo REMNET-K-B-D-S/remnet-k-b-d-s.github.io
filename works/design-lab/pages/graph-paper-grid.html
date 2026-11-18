@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>03 方眼グリッド｜REMNET Design Archive</title>
+  <style>
+    :root { --paper:#f1ede3; --ink:#141412; --red:#a33624; --unit:40px; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font:14px/1.55 Arial,"Yu Gothic",sans-serif; }
+    a { color:inherit; }
+    .sheet { width:min(calc(100% - 24px),1120px); margin:12px auto 42px; border-top:1px solid var(--ink); border-left:1px solid var(--ink); background-image:linear-gradient(90deg,transparent calc(var(--unit) - 1px),rgba(20,20,18,.24) calc(var(--unit) - 1px)),linear-gradient(transparent calc(var(--unit) - 1px),rgba(20,20,18,.24) calc(var(--unit) - 1px)); background-size:var(--unit) var(--unit); }
+    .cell { background:var(--paper); border-right:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+    header { display:grid; grid-template-columns:2fr 1fr; min-height:320px; }
+    .title { padding:clamp(30px,6vw,78px); }
+    .title p { margin:0 0 35px; color:var(--red); font-weight:800; letter-spacing:.14em; }
+    h1 { margin:0; font-size:clamp(3rem,9vw,8rem); font-weight:400; line-height:.83; letter-spacing:-.08em; }
+    .index { display:grid; grid-template-columns:1fr 1fr; }
+    .index div { display:flex; align-items:flex-end; padding:14px; border-right:1px solid var(--ink); border-bottom:1px solid var(--ink); font:700 12px Consolas,monospace; }
+    .index div:nth-child(even){border-right:0}
+    .statement { display:grid; grid-template-columns:1fr 1fr; }
+    .statement > div { min-height:260px; padding:clamp(24px,5vw,55px); }
+    .statement > div:first-child { border-right:1px solid var(--ink); }
+    h2 { margin:0 0 22px; font-size:clamp(1.4rem,3vw,2.5rem); }
+    p { margin:0; } p+p { margin-top:14px; }
+    .quote { font-family:"Yu Mincho",serif; font-size:clamp(1.25rem,2.5vw,2rem); line-height:1.7; }
+    .recipe { display:grid; grid-template-columns:170px 1fr; }
+    .recipe h2 { padding:25px; color:var(--paper); background:var(--red); margin:0; font:700 16px Consolas,monospace; }
+    pre { margin:0; padding:25px; overflow:auto; background:var(--paper); font:12px/1.55 Consolas,monospace; white-space:pre; }
+    footer { display:flex; justify-content:space-between; gap:20px; padding:20px; }
+    .back { font-weight:800; }
+    @media(max-width:680px){ header,.statement{grid-template-columns:1fr}.index{min-height:180px}.statement>div:first-child{border-right:0;border-bottom:1px solid var(--ink)}.recipe{grid-template-columns:1fr}h1{font-size:clamp(3rem,18vw,6rem)}footer{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <header class="cell">
+      <div class="title"><p>DESIGN TEST / 03</p><h1>方眼<br>GRID</h1></div>
+      <div class="index"><div>01<br>LINE</div><div>02<br>SPACE</div><div>03<br>TYPE</div><div>04<br>ADDRESS</div></div>
+    </header>
+    <section class="statement cell">
+      <div><h2>シンプル・イズ・ベスト。</h2><p class="quote">ノートっぽくすりゃ、AI製っぽく見えにくいかもしれない。</p></div>
+      <div><h2>REMNETの雑感</h2><p>枠は飾りではない。枠そのものが住所である。</p><p>どの文章がどこに住んでいるかが見えると、画面は「カードの寄せ集め」ではなく、一枚の設計図になる。</p><h2>心理ハック仮説</h2><p>グリッドを隠さず見せることで、配置の理由と人間の判断跡が残っているように感じられるかもしれない。</p></div>
+    </section>
+    <section class="recipe cell">
+      <h2>RECIPE<br>CODE</h2><pre><code>.sheet {
+  --unit: 40px;
+  background-image:
+    linear-gradient(90deg,
+      transparent 39px, #999 39px),
+    linear-gradient(
+      transparent 39px, #999 39px);
+  background-size: 40px 40px;
+}
+.cell { border: 1px solid #141412; }</code></pre>
+    </section>
+    <footer class="cell"><a class="back" href="../index.html">← INDEXへ戻る</a><span>SINCE 2026-08-03 / 企画・制作：REMNET_K_B_D_S</span></footer>
+  </div>
+<p style="font-size:12px;padding:12px">REMNET_K_B_D_Sの公開HPへの収録にあたり、参照先と制作者表記を整理しています。作品の配色・構成とライセンスは維持しています。</p></body>
+</html>
