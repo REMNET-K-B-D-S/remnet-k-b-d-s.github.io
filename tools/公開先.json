@@ -286,5 +286,9 @@
   {
     "source": "site/作品/spirit/scene.png",
     "public": "assets/images/spirit.png"
+  },
+  {
+    "source": "site/記事/article-research-ethics-access.html",
+    "public": "pages/article-research-ethics-access.html"
   }
 ]

@@ -1,0 +1,20 @@
+.article-page .article-subtitle{font-size:1.08em;line-height:1.9;color:var(--補足);margin-top:-12px;margin-bottom:24px}
+.article-page .tools{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px}
+.article-page .property-label{font-weight:600;margin:0 0 8px;font-size:1rem}
+.article-page .article-cover{margin:24px 0 32px}
+.article-page .article-cover img{display:block;width:100%;max-width:100%;height:auto;border:1px solid var(--線);border-radius:var(--角)}
+.article-page .article-content{line-height:2.05}
+.article-page .article-content>p{margin-bottom:1.2em}
+.article-page .article-toc{margin:28px 0;padding:18px 22px;border:1px solid var(--線);background:var(--薄い面)}
+.article-page .article-toc p{margin:0 0 8px;font-weight:600}
+.article-page .article-toc ul{margin:0;padding-left:1.3em}
+.article-page .article-toc li{margin:7px 0}
+.article-page .article-content [id],.article-page .article-related{scroll-margin-top:24px}
+.article-page .reference-title{padding-top:16px;border-top:1px solid var(--線);margin-top:25px}
+.article-page a.reference-link{white-space:nowrap;text-underline-offset:.2em}
+.article-page :target{outline:2px solid var(--紫);outline-offset:6px}
+.article-card{margin:18px 0;padding:20px;border:1px solid var(--線);background:var(--薄い面)}
+.article-card h3{margin:8px 0 12px;font-size:1.2rem}
+.article-card .article-date,.article-card .article-tags{font-size:.875rem;color:var(--補足)}
+.article-card .article-thumb{width:100%;max-width:420px;height:auto;display:block;margin:12px 0}
+@media(max-width:480px){.article-page .article-toc{padding:14px}.article-page .article-subtitle{font-size:1rem}.article-card{padding:15px}}
