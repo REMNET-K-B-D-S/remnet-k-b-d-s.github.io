@@ -290,5 +290,13 @@
   {
     "source": "site/記事/article-research-ethics-access.html",
     "public": "pages/article-research-ethics-access.html"
+  },
+  {
+    "source": "site/共通/images/icons/favicon.ico",
+    "public": "favicon.ico"
+  },
+  {
+    "source": "site/共通/images/icons/apple-touch-icon.png",
+    "public": "apple-touch-icon.png"
   }
 ]

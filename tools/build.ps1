@@ -20,6 +20,15 @@ foreach($entry in $files){
   [IO.File]::WriteAllText($dest,$text,[Text.UTF8Encoding]::new($false))
  }elseif([IO.Path]::GetExtension($source) -in @('.html','.css','.md')){
   $text=Convert-RemnetReferences -Text ([IO.File]::ReadAllText($source)) -File $source -Direction ToPublic -Markdown:([IO.Path]::GetExtension($source) -eq '.md')
+  if([IO.Path]::GetExtension($source) -eq '.html'){
+   $prefix='../'*(@($entry.public -split '/').Count-1)
+   $icons='<link rel="icon" href="'+$prefix+'favicon.ico?v=rem-20261123" sizes="16x16 32x32 48x48" type="image/x-icon">'+
+    '<link rel="icon" href="'+$prefix+'assets/images/icons/favicon-32.png?v=rem-20261123" sizes="32x32" type="image/png">'+
+    '<link rel="apple-touch-icon" href="'+$prefix+'apple-touch-icon.png?v=rem-20261123" sizes="180x180">'
+   # headの終了タグを省略した既存作品では、bodyの直前がheadの末尾になる。
+   if($text -notmatch '(?i)(</head>|<body\b)'){throw "アイコンを設定する位置がありません: $($entry.public)"}
+   $text=([regex]::new('(?i)(</head>|<body\b)')).Replace($text,[Text.RegularExpressions.MatchEvaluator]{param($m) $icons+$m.Value},1)
+  }
   [IO.File]::WriteAllText($dest,$text,[Text.UTF8Encoding]::new($false))
  }else{[IO.File]::Copy($source,$dest,$false)}
 }
