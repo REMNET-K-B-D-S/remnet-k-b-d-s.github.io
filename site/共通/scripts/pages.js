@@ -101,7 +101,7 @@ window.REMNET_PAGES = [
     "tags": [
       "リンク"
     ],
-    "text": "つながり ／ 活動先とリンク REMNET_K_B_D_S ✝ ◇ ＋ ✧ 活動先とリンク REMNETの活動先と、関連する外部サイト。 X ↗ x.com/REMNET_K_B_D_S GitHub ↗ github.com/REMNET_K_B_D_S note ↗ note.com/remnetkbds Substack ↗ substack.com/@remnetkbds 各リンクは外部サイトを新しいタブで開きます。 ← ホームへ 2026年9月10日 開設"
+    "text": "つながり ／ 活動先とリンク REMNET_K_B_D_S ✝ ◇ ＋ ✧ 活動先とリンク REMNETの活動先と、関連する外部サイト。 X ↗ x.com/REMNET_K_B_D_S GitHub ↗ github.com/REMNET-K-B-D-S note ↗ note.com/remnetkbds Substack ↗ substack.com/@remnetkbds 各リンクは外部サイトを新しいタブで開きます。 ← ホームへ 2026年9月10日 開設"
   },
   {
     "id": "contact",
