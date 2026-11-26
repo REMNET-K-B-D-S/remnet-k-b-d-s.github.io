@@ -298,5 +298,17 @@
   {
     "source": "site/共通/images/icons/apple-touch-icon.png",
     "public": "apple-touch-icon.png"
+  },
+  {
+    "source": "site/記事/article-why-note.html",
+    "public": "pages/article-why-note.html"
+  },
+  {
+    "source": "site/記事/article-knowledge-and-misuse.html",
+    "public": "pages/article-knowledge-and-misuse.html"
+  },
+  {
+    "source": "site/記事/article-aae-01-preview.html",
+    "public": "pages/article-aae-01-preview.html"
   }
 ]

@@ -18,3 +18,9 @@
 .article-card .article-date,.article-card .article-tags{font-size:.875rem;color:var(--補足)}
 .article-card .article-thumb{width:100%;max-width:420px;height:auto;display:block;margin:12px 0}
 @media(max-width:480px){.article-page .article-toc{padding:14px}.article-page .article-subtitle{font-size:1rem}.article-card{padding:15px}}
+.article-page .article-purchase{margin:32px 0;padding:24px;border:2px solid var(--紫);background:var(--薄い面);scroll-margin-top:24px}
+.article-page .article-purchase h2{margin-top:0}
+.article-page .purchase-link{display:inline-block;padding:12px 18px;border:1px solid currentColor;border-radius:var(--角);font-weight:600}
+.article-page .article-content figure{margin:24px 0;max-width:100%}
+.article-page .article-content figcaption{font-size:.875rem;color:var(--補足);line-height:1.8}
+.article-page .article-content a,.article-page .article-purchase a{overflow-wrap:anywhere}
